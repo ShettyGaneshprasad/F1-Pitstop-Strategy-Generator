@@ -1,220 +1,220 @@
 1
 Bahrain Grand Prix
 Bahrain International Circuit
+24
 2004
 57
 5.412
 308.238
 1:31.447
 Pedro de la Rosa (2005)
-/
 2
 Emilia Romagna Grand Prix
 Autodromo Enzo e Dino Ferrari
+21
 1980
 63
 4.909
 309.049
 1:15.484
 Lewis Hamilton (2020)
-/
 3
 Portuguese Grand Prix
 Autódromo Internacional do Algarve
+22
 2020
 66
 4.653
 306.826
 1:18.750
 Lewis Hamilton (2020)
-/
 4
 Spanish Grand Prix
 Circuit de Barcelona-Catalunya
+21
 1991
 66
 4.675
 308.424
 1:18.149
 Max Verstappen (2021)
-/
 5
 Monaco Grand Prix
 Circuit de Monaco
+24
 1950
 78
 3.337
 260.286
 1:12.909
 Lewis Hamilton (2021)
-/
 6
 Azerbaijan Grand Prix
 Baku City Circuit
+22
 2016
 51
 6.003
 306.049
 1:43.009
 Charles Leclerc (2019)
-/
 7
 French Grand Prix
 CIRCUIT PAUL RICARD
+21
 1971
 53
 5.842
 309.69
 1:32.740
 Sebastian Vettel (2019)
-/
 8
 Austrian Grand Prix
 Red Bull Ring
+21
 1970
 71
 4.318
 306.452
 1:05.619
 Carlos Sainz (2020)
-/
 9
 British Grand Prix
 SILVERSTONE CIRCUIT
+28
 1950
 52
 5.891
 306.198
 1:27.097
 Max Verstappen (2020)
-/
 10
 Hungarian Grand Prix
 Hungaroring
+21
 1986
 70
 4.381
 306.63
 1:16.627
 Lewis Hamilton (2020)
-/
 11
 Belgian Grand Prix
 Circuit de Spa-Francorchamps
+21
 1950
 44
 7.004
 308.052
 1:46.286
 Valtteri Bottas (2018)
-/
 12
 Dutch Grand Prix
 Circuit Zandvoort
+23
 1952
 72
 4.259
 306.648
 NA
 NA
-/
 13
 Italian Grand Prix
 Autodromo Nazionale Monza
+24
 1950
 53
 5.793
 306.72
 1:21.046
 Rubens Barrichello (2004)
-/
 14
 Russian Grand Prix
 Sochi Autodrom
+25
 2014
 53
 5.848
 309.745
 1:35.761
 Lewis Hamilton (2019)
-/
 15
 Turkish Grand Prix
 Intercity Istanbul Park
+24
 2005
 58
 5.338
 309.396
 1:24.770
 Juan Pablo Montoya (2005)
-/
 16
 Japanese Grand Prix
 Suzuka International Racing Course
+16
 1987
 53
 5.807
 307.471
 1:30.983
 Lewis Hamilton (2019)
-/
 17
 United States Grand Prix
 Circuit Of The Americas
+25
 2012
 56
 5.513
 308.405
 1:36.169
 Charles Leclerc (2019)
-/
 18
 Mexican Grand Prix
 Autódromo Hermanos Rodríguez
+23
 1963
 71
 4.304
 305.354
 1:18.741
 Valtteri Bottas (2018)
-/
 19
 Sao Paulo brazil Grand Prix
 Autódromo José Carlos Pace
+23
 1973
 71
 4.309
 305.909
 1:10.540
 Valtteri Bottas (2018)
-/
 20
 Australian Grand Prix
 Melbourne Grand Prix Circuit
+25
 1986
 58
 5.303
 307.574
 1:24.125
 Michael Schumacher (2004)
-/
 21
 Saudi Arabia Grand Prix
 Jeddah Street Circuit
+22
 2021
 50
 6.175
 308.75
 NA
 NA
-/
 22
 Abu Dhabi Grand Prix
 Yas Marina Circuit
+21
 2009
 55
 5.554
 305.355
 1:39.283
 Lewis Hamilton (2019)
-/
