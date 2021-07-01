@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    system("bah.jpg");
+    printf("Hey CI CD Check");
 
     return 0;
 }
