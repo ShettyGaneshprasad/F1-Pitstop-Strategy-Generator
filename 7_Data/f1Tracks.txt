@@ -1,4 +1,5 @@
-Bahrain
+1
+Bahrain Grand Prix
 Bahrain International Circuit
 2004
 57
@@ -7,7 +8,8 @@ Bahrain International Circuit
 1:31.447
 Pedro de la Rosa (2005)
 /
-Italy
+2
+Emilia Romagna Grand Prix
 Autodromo Enzo e Dino Ferrari
 1980
 63
@@ -16,7 +18,8 @@ Autodromo Enzo e Dino Ferrari
 1:15.484
 Lewis Hamilton (2020)
 /
-Portugal
+3
+Portuguese Grand Prix
 Autódromo Internacional do Algarve
 2020
 66
@@ -25,7 +28,8 @@ Autódromo Internacional do Algarve
 1:18.750
 Lewis Hamilton (2020)
 /
-Spain
+4
+Spanish Grand Prix
 Circuit de Barcelona-Catalunya
 1991
 66
@@ -34,7 +38,8 @@ Circuit de Barcelona-Catalunya
 1:18.149
 Max Verstappen (2021)
 /
-Monaco
+5
+Monaco Grand Prix
 Circuit de Monaco
 1950
 78
@@ -43,7 +48,8 @@ Circuit de Monaco
 1:12.909
 Lewis Hamilton (2021)
 /
-Azerbaijan
+6
+Azerbaijan Grand Prix
 Baku City Circuit
 2016
 51
@@ -52,7 +58,9 @@ Baku City Circuit
 1:43.009
 Charles Leclerc (2019)
 /
-France
+7
+French Grand Prix
+CIRCUIT PAUL RICARD
 1971
 53
 5.842
@@ -60,7 +68,8 @@ France
 1:32.740
 Sebastian Vettel (2019)
 /
-Austria
+8
+Austrian Grand Prix
 Red Bull Ring
 1970
 71
@@ -69,7 +78,9 @@ Red Bull Ring
 1:05.619
 Carlos Sainz (2020)
 /
+9
 British Grand Prix
+SILVERSTONE CIRCUIT
 1950
 52
 5.891
@@ -77,7 +88,8 @@ British Grand Prix
 1:27.097
 Max Verstappen (2020)
 /
-Hungarian
+10
+Hungarian Grand Prix
 Hungaroring
 1986
 70
@@ -86,7 +98,8 @@ Hungaroring
 1:16.627
 Lewis Hamilton (2020)
 /
-Belgian
+11
+Belgian Grand Prix
 Circuit de Spa-Francorchamps
 1950
 44
@@ -95,7 +108,8 @@ Circuit de Spa-Francorchamps
 1:46.286
 Valtteri Bottas (2018)
 /
-Dutch
+12
+Dutch Grand Prix
 Circuit Zandvoort
 1952
 72
@@ -104,5 +118,103 @@ Circuit Zandvoort
 NA
 NA
 /
-
-
+13
+Italian Grand Prix
+Autodromo Nazionale Monza
+1950
+53
+5.793
+306.72
+1:21.046
+Rubens Barrichello (2004)
+/
+14
+Russian Grand Prix
+Sochi Autodrom
+2014
+53
+5.848
+309.745
+1:35.761
+Lewis Hamilton (2019)
+/
+15
+Turkish Grand Prix
+Intercity Istanbul Park
+2005
+58
+5.338
+309.396
+1:24.770
+Juan Pablo Montoya (2005)
+/
+16
+Japanese Grand Prix
+Suzuka International Racing Course
+1987
+53
+5.807
+307.471
+1:30.983
+Lewis Hamilton (2019)
+/
+17
+United States Grand Prix
+Circuit Of The Americas
+2012
+56
+5.513
+308.405
+1:36.169
+Charles Leclerc (2019)
+/
+18
+Mexican Grand Prix
+Autódromo Hermanos Rodríguez
+1963
+71
+4.304
+305.354
+1:18.741
+Valtteri Bottas (2018)
+/
+19
+Sao Paulo brazil Grand Prix
+Autódromo José Carlos Pace
+1973
+71
+4.309
+305.909
+1:10.540
+Valtteri Bottas (2018)
+/
+20
+Australian Grand Prix
+Melbourne Grand Prix Circuit
+1986
+58
+5.303
+307.574
+1:24.125
+Michael Schumacher (2004)
+/
+21
+Saudi Arabia Grand Prix
+Jeddah Street Circuit
+2021
+50
+6.175
+308.75
+NA
+NA
+/
+22
+Abu Dhabi Grand Prix
+Yas Marina Circuit
+2009
+55
+5.554
+305.355
+1:39.283
+Lewis Hamilton (2019)
+/
