@@ -3,6 +3,7 @@
 - Which Grand Prix Unique number
 - Grand Prix name
 - Circuit name
+- Average Time lost in the pits
 - First GP held year
 - Number of Laps
 - Circuit length in KM
@@ -16,5 +17,3 @@
 - Tyre Type
 - Tyre Speed offset compared to Soft compound in Seconds
 - Average Tyre Degradation per lap.
-
-Each data end with "/"

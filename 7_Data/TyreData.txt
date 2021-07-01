@@ -2,14 +2,11 @@
 Soft Compound Tyre
 0.00
 0.035
-/
 2
 Medium Compound Tyre
 0.38
 0.02
-/
 3
 Hard Compound Tyre
 0.69
 0.01
-/
