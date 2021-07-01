@@ -1,4 +1,4 @@
-PROJ_NAME = Demo
+PROJ_NAME = F1-Pitstop-Strategy-Generator
 BUILD_DIR = Build
 
 INC = inc
