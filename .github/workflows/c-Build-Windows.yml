@@ -1,0 +1,25 @@
+name: C CI - Build Status on Linux
+
+on:
+  push:
+    branches: [Production]
+  pull_request:
+    branches: [Production]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: make
+        run: make -C 3_Implementation/ all
+      - name: Export Release Timestamp
+        run: echo "APP_VERSION=release_$(date +'%Y-%m-%d_%H-%m-%S')" >> $GITHUB_ENV
+      - name: Release Apps on Linux
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.APP_VERSION }}
+          name: ${{ env.APP_VERSION }}
+          token: ${{ secrets.TOKEN_F1 }}
+          artifacts: "3_Implementation/Build/*.exe"

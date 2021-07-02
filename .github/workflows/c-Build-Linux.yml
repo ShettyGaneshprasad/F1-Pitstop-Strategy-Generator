@@ -2,7 +2,6 @@ name: C CI - Build Status on Linux
 
 on:
   push:
-
     branches: [Production]
   pull_request:
     branches: [Production]
@@ -17,7 +16,7 @@ jobs:
         run: make -C 3_Implementation/ all
       - name: Export Release Timestamp
         run: echo "APP_VERSION=release_$(date +'%Y-%m-%d_%H-%m-%S')" >> $GITHUB_ENV
-      - name: Release Apps
+      - name: Release Apps on Linux
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.APP_VERSION }}
