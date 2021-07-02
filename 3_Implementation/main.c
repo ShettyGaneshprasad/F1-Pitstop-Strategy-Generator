@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    printf("Hey CI CD Check");
+    printf("Running Programm");
 
     return 0;
 }
