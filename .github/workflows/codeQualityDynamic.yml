@@ -1,4 +1,4 @@
-name: CodeQuality Dynamic Code Analysis Valgrind
+name: Valgrind-Dynamic Code Quality Analysis
 on:
   push:
     branches: [Production]
