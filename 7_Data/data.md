@@ -1,4 +1,6 @@
-# Track data format
+#Data Format
+
+## Track data format
 
 - Which Grand Prix Unique number
 - Grand Prix name
@@ -11,7 +13,7 @@
 - Lap record time MM:SS:MS
 - Lap record by driver name with year
 
-# Tyre data format
+## Tyre data format
 
 - Tyre Unique Number
 - Tyre Type
