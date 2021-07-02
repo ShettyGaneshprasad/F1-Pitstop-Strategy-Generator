@@ -1,4 +1,4 @@
-name: C CI - Build & Release Status on Windows.
+name: C CI - Build Status on Windows.
 
 on:
   push:
