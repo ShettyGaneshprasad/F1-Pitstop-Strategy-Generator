@@ -1,85 +1,106 @@
 # Requirements
-## Introduction
-- A library is a compilation of material and related materials that are made available to a certain group for reference or borrowing. As a result, manually managing a library is time-consuming and inefficient. In this respect, the computerised framework for managing library management operations is a systematic way to minimise human labour, the complexity of the manual system, and soon.
-- The aim of this project is to develop and incorporate a computerised library management system. The C programming language was used to develop and execute the library management framework.
 
+## Introduction
+
+- Unit conversion is used in daily life for research purposes, education purposes, manufacturing, and in many other fields. So it is necessary to have software that can help in the accurate and fast conversion of units from one to another.
+- I chose this topic to build a light and reliable application for unit conversion purposes.
+
+## Process Overview
+
+The process of conversion depends on the specific situation and the intended purpose. This may be governed by regulation, contract, technical specifications, or other published standards. Engineering judgment may include such factors as:
+
+- The precision and accuracy of measurement and the associated uncertainty of measurement.
+- The statistical confidence interval or tolerance interval of the initial measurement.
+- The number of significant figures of the measurement.
+- The intended use of the measurement including the engineering tolerances.
+- Historical definitions of the units and their derivatives used in old measurements; e.g., international foot vs. US survey foot.
+
+Some conversions from one system of units to another need to be exact, without increasing or decreasing the first measurement's precision. This is sometimes called **soft conversion**. It does not involve changing the physical configuration of the item being measured.
+
+By contrast, a **hard conversion** or an **adaptive conversion** may not be exactly equivalent. It changes the measurement to convenient and workable numbers and units in the new system. It sometimes involves a slightly different configuration, or size substitution, of the item. Nominal values are sometimes allowed and used.
 
 ## Research
- A **library management system** is a system for library resource planning that is used to view records stored, requests, payment, or lending made by clients. Occasionally, a term such as library integrated framework is used, especially in the _United Kingdom_. Cynthia Lopta describes an interconnected system as a computerised system in which all operating components use the same bibliographic database.  
- 
- **Integration** is most commonly seen in biblioteconomy. It became a milestone about 20 years ago and has become almost synonymous with automated device. Integrated may also refer to a method in which all library functions are stored in a single bibliographic register.
- 
- By the mid to late 2000s, library management system providers had increased not only the amount of resources available but also their costs, causing some dissatisfaction for many smaller libraries. Simultaneously, the _open source Integrated Library System_ was in its early stages of growth.
 
- Few libraries have begun to use open source modular library systems such as _**KOHA**_ and _**Evergreen**_. The majority of these factors were to escape vendor lock-up, licencing costs, and to engage in software development. The much-needed vendor independence has encouraged libraries to prioritise needs based on urgency rather than what their vendor might deliver.
- 
- Libraries who have recently switched to open source integrated library systems have discovered that providers are now more likely to offer reliable support in order to maintain a relationship when they no longer have the leverage of owning the Integrated Library System programme and binding libraries down to tight contracts. This is what happened with the _**SC LENDS consortium**_. Following the popularity of **Evergreen** with the _**Georgia PINES library consortium**_, _**the South Carolina State Library_** and several local public libraries developed the _**SC LENDS consortium**_ to exchange services and take advantage of the open source nature of the Evergreen Integrated Library System to address their unique needs.
- 
- By **October 2015**, just few years after _**SC LENDS's inception**_, thirteen public library systems from 15 states, in addition to the South Carolina State Library, had entered the consortium. Librarytechnology.org conducts an annual survey of over 1,500 libraries and found that in 2012, 2% of those interviewed used the Integrated Library System, 8% in 2013, and 12% in 2014 had implemented an open source Library Management System.
+### Benefits
 
- A library project framework with many versatile and convenient features that allow librarians and library users to optimise time and productivity. The library system has comprehensive information on teachers, employees, and materials, as well as tracking the books that are accessible in the library and the books that have been distributed to library users (students). It displays the most famous books among students. It can have a book that was misplaced in the library. It maintains track of the retailer as well as the book binders.
-## Cost and Features
-![Description](Link to Pic)
--- Content 
+- Lightweight and can be accessed from any device
+- Help researchers: It can help them find results with high accuracy of different unit types
+- Fast: Compute the results within a fraction of seconds
+- Education: Students can be benefitted from this. They can use it for learning purposes.
+
+### AGE
+
+| 1960s                                                                   | 1980s                                                                     | 2000                                                                                    | Present                                                                                                                   |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Calculators with small keyboards having paper tapes for output display. | Calculator with 12-digit display in red LED and with integrated circuits. | Introduction of graphing calculators, affordable, dual powered with the liquid display. | Advanced calculators which can handle higher-level math which is ideal for everything from economics to computer science. |
+
+### COST
+
+| 1960s     | 1980s     | 2000    | Present |
+| --------- | --------- | ------- | ------- |
+| 360$-400$ | 700$-800$ | 20$-30$ | 10$-12$ |
+
 ## Defining Our System
 
-This System has the ability to:
+- Assumptions
 
-   - Login
-   - Show the choices in Main Menu
-   - Add Records of the Book
-   - Delete Records of the Book
-   - Edit Records of Books
-   - Search the Records
-   - View all the Records
+  - Data filled or expected result cannot be greater than maximum data that a data type can store.
+  - User knows what he/she wants from the application
 
-which can be seen in a pictorial representation as follows:
+- Explanation
+  - Firstly unit type should be selected
+  - Secondly **from** and **to** value should be selected
+  - Then, operand should be filled and at last press enter to find the result
 
-![System Definition](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/1_Requirements/LMS.png)
-    
 ## SWOT ANALYSIS
-![SWOT](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/1_Requirements/SWOT_Analysis.jpg)
 
-# 4W&#39;s and 1&#39;H
+![SWOT Analysis](https://github.com/KrShivanshu/CMiniProject/blob/main/6_ImagesAndVideos/Requirements/SWOT%20Analysis.jpg)
 
-## Who:
+## 4W&#39;s and 1&#39;H
 
-- All Libraries, for maintaining records of their books.
+## Who
 
-## What:
+- For researchers, manufactures, educators and students.
 
-- It is tough for the Librarians to handle the maintenance the records of all books in their Library. This will help them to maintain the records.
+## What
 
-## When:
+- A unit converter is a tool used to convert a unit from one to another like Kilometer to Meter, Celsius to Kelvin, etc.
 
-- In early 2000's, The need of a Digital way of managing, maintaining the records of Libraries. Thus, This system came into the picture.
+## Where
 
-## Where:
+- Can be used in manufacturing companies, schools, colleges, examination halls, and research labs.
 
-- All around the world.
+## When
 
-## How:
+- When we want to find the value (X Celsius in Fahrenheit), (Y kilometers in meter), etc.
 
-- There has been a lot of cases where the manual records were not in a position to access, thus not able to know about the issues and returns of books. Using this system, we can eliminate that possibility.
+## How
 
-# Detail requirements
-## High Level Requirements:
+- Run the application, fill the options, give the value and find the result.
 
-| ID | Description | Status (Implemented/Future) |
-| --- | --- | --- |
-| HLR01 | Library Management System | Future |
-   
+## Detail requirements
 
+### High Level Requirements
 
-##  Low level Requirements:
+| ID   | Description                                                                                                                                     | Category       | Status (Implemented/ InProgress/ Future) |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------- |
+| HR01 | Able to convert any units like length, temperature, volume, weight, area, and time                                                              | Functional     | Implemented                              |
+| HR02 | In any situation, the calculator must produce a correct result defined by the well-known arithmetic rules.                                      | Functional     | Implemented                              |
+| HR03 | User to resolve the errors if the calculation for conversions is impossible, then the convertor must display information helping the situation. | Non-Functional | Future                                   |
+| HR04 | After performing one calculation user can perform another calculation by using the result obtained in the previous calculation.                 | Functional     | InProgress                               |
 
-|ID | Description | Status (Implemented/Future) |
-| --- | --- | --- |
-| LLR01 | The Admin shall see a welcome screen into the Library Management System | Future |
-| LLR02 | The Admin shall login with his/her unique username and password | Future |
-| LLR03 | The Admin shall see a main-menu with options to choose for | Future |
-| LLR04 | The Admin will be able to add a book into the records by giving the details of that book | Future |
-| LLR05 | The Admin can be able to delete the records of book that has been submitted | Future |
-| LLR06 | The Admin will be able to edit the details of the record of any book | Future |
-| LLR07 | The Admin can search for any book in the records | Future |
-| LLR08 | The Admin will be able to view all the books in the record | Future |
+### Low level Requirements
+
+| ID     | Description                                                                                          | HLR ID     | Status (Implemented/ InProgress/ Future) |
+| ------ | ---------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------- |
+| LR01   | Can display options for selecting the unit type and receive input for it                             | HR01       | Implemented                              |
+| LR02   | Can display options for a unit to be converted **from** and receive input for it                     | HR01       | Implemented                              |
+| LR03   | Able to give options to select the unit to be converted **to** and successively receive input for it | HR01       | Implemented                              |
+| LR04   | Recieve input for an operand to be converted                                                         | HR01       | Implemented                              |
+| LR05   | Able to compute, convert and display the results                                                     | HR01       | Implemented                              |
+| LR06   | Should calculate the result up to minimal decimal point                                              | HR02       | Implemented                              |
+| LR06.1 | Shouldn't round off the answer and display the result with accuracy & precision                      | HR02       | Implemented                              |
+| LR07   | If the answer exceeds the maximum value it can store, display an error message to the user           | HR02, HR03 | Future                                   |
+| LR07.1 | Ask the user to reduce the size of operand                                                           | HR02, HR03 | Future                                   |
+| LR08   | Should able to store the result for future use                                                       | HR04       | In Progress                              |
+| LR08.1 | Displays options to act on the stored result                                                         | HR04       | Future                                   |

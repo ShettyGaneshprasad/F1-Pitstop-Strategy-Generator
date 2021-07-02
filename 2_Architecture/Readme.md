@@ -2,12 +2,16 @@
 
 ## High Level Design
 
---- TBD Structural and Behavioural Diagram
-![HighLevelStructuralDiagram](Link to Pic)
-![HighLevelBehaviouralDiagram](Link to Pic)
+- Structural Diagram
+
+![HighLevelStructuralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/HighLevelStructural.png)
 
 ## Low Level Design
 
---- TBD Structural and Behavioural Diagram
-![FeaturesLevelStructuralDiagram](Link to Pic)
-![FeaturesBehaviouralDiagram](Link to Pic)
+- Structural Diagram
+
+![FeaturesLevelStructuralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/Component.png)
+
+- Behavioural Diagram
+
+![FeaturesBehaviouralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/UseCase.jpg)
