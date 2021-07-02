@@ -1,14 +1,14 @@
-# F1-Pitstop-Strategy-Generator
+# SDLC Activity Based Learning
+## F1 Pitstop Strategy Generator
+
+![F1 Pitstop Strategy Generator](https://cdn-wp.thesportsrush.com/2021/03/eb255945-personal-vlog-youtube-thumbnail-2021-03-28t223255.924.jpg)
 
 
-Visit [Pages for Report -optional](using github.io option)
+Build | Code Quality | Unity | [Git Inspector](using github.io option)|Valgrid|
+|---------|--------------|-----------|------------------|---------------------|
+[![C/C++ CI](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-build.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/MiniProject-C/actions/workflows/c-build.yml)|[![Static Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/cppcheck.yml)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/21c5cae1b5844158b9eb3d4c80125c89)](https://app.codacy.com/gh/IshaPrabhu-260025/MiniProject-C/dashboard?branch=main=Badge_Grade) | [![Unity-Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/unity@test.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/unity@test.yml)| [![git inspector CI](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/gitinspector.yml)|[![Valgrind](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/Valgrid@test.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/Valgrid@test.yml)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-[![C/C++ CI](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Linux.yml/badge.svg)(https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Windows.yml)![Dynamic Valgrind](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml/badge.svg) | [![Static Cppcheck](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml) [![Dynamic Valgrind](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml)| [![Unity - Unit Testing](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/unity.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/gitinspector.yml)
-
-
-## Folder Structure
+<!-- ## Folder Structure
 Folder             | Description
 -------------------| -----------------------------------------
 `1_Requirements`   | Documents detailing requirements and research
@@ -18,21 +18,15 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+SF Id. |  Name   |     
+-------|---------|
+`268423` | Shetty Ganeshprasad  |      
+   
 
-<!-- ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ... -->
 
-<!-- ## Learning Resources
+## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
 3. [git inspector](https://github.com/ejwa/gitinspector.git)
 4. [github workflow](https://docs.github.com/en/actions/learn-github-action) -->
-
