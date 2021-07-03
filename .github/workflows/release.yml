@@ -1,5 +1,6 @@
 name: Release App on Github.
 
+
 on:
   push:
     branches: [Production]
@@ -7,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -15,8 +16,10 @@ jobs:
         run: make -C 3_Implementation/ all
       - name: Export Release Timestamp
         run: echo "APP_VERSION=release_$(date +'%Y-%m-%d_%H-%m-%S')" >> $GITHUB_ENV
-      - name: upload windows artifact
-        uses: actions/upload-artifact@v1
+      - name: Release Apps on Linux
+        uses: ncipollo/release-action@v1
         with:
-          name: uploads
-          path: 3_Implementation/Build
+          tag: ${{ env.APP_VERSION }}
+          name: ${{ env.APP_VERSION }}
+          token: ${{ secrets.TOKEN_F1 }}
+          artifacts: "3_Implementation/Build/*.out"
