@@ -6,5 +6,30 @@
   "files.associations": {
     "unity_internals.h": "c",
     "unity.h": "c"
-  }
+  },
+  "cSpell.words": [
+    "Algarve",
+    "Autodrom",
+    "Barrichello",
+    "Bottas",
+    "Catalunya",
+    "Dhabi",
+    "Francorchamps",
+    "Hermanos",
+    "Hungaroring",
+    "Internacional",
+    "Jeddah",
+    "Leclerc",
+    "Monza",
+    "Nazionale",
+    "Paulo",
+    "RICARD",
+    "SILVERSTONE",
+    "Sainz",
+    "Suzuka",
+    "Valtteri",
+    "Verstappen",
+    "Vettel",
+    "Zandvoort"
+  ]
 }

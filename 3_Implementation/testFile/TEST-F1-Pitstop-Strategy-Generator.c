@@ -1,5 +1,7 @@
 #include <string.h>
 #include "../unity/unity.h"
+#include "../inc/F1-Pitstop-Strategy-Generator.h"
+#include "../src/trackInput.c"
 
 /* Required by the unity test framework */
 void setUp()
@@ -8,6 +10,17 @@ void setUp()
 /* Required by the unity test framework */
 void tearDown()
 {
+}
+
+/**
+ * @brief checking if programme is able to read file 
+ * 
+ */
+void test_FileAvailability(void)
+{
+    FILE *fptr;
+    fptr = fopen("../7_Data/f1Tracks.txt", "a+");
+    TEST_ASSERT(fptr);
 }
 
 void test_details(void)
@@ -31,7 +44,7 @@ void test_display(void)
     // strcpy(stream.name,"gsgs");
     // strcpy(stream.email,"gsgs@gmail.com");
     // strcpy(stream.destination,"India");
-    TEST_ASSERT_EQUAL_INT_MESSAGE(1, b, "B is not equal to 1");
+    TEST_ASSERT_EQUAL_INT_MESSAGE(2, b, "B is not equal to 2");
     // TEST_ASSERT_EQUAL_STRING("1234",stream.passport);
     // TEST_ASSERT_EQUAL_STRING("isha",stream.name);
     // TEST_ASSERT_EQUAL_STRING("gsgs@gmail.com",stream.email);
@@ -46,6 +59,7 @@ int main(void)
     /* Run Test functions */
     RUN_TEST(test_details);
     RUN_TEST(test_display);
+    RUN_TEST(test_FileAvailability);
 
     /* Close the Unity Test Framework */
     return UNITY_END();
