@@ -1,9 +1,17 @@
 PROJ_NAME = F1-Pitstop-Strategy-Generator
 BUILD_DIR = Build
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-INC = inc
+INC = -Iinc\
+-Iunity\
+-Isrc
 
 SRC = main.c
+
+TEST_SRC =testfile/TEST-F1-Pitstop-Strategy-Generator.c\
+unity/unity.c\
+
+TEST_OUTPUT = $(BUILD)/Test_$(PROJ_NAME).$(EXEC)
 
 ifdef OS
    RM = del /q
@@ -17,14 +25,20 @@ else
    endif
 endif
 
+run: all
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
 all: $(SRC) $(BUILD_DIR)
 	gcc -I $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+test:$(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
-run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)

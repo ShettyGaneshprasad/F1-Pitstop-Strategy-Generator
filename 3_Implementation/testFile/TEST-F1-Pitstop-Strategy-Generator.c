@@ -1,6 +1,5 @@
-#include "../unity/unity.h"
 #include <string.h>
-#include "../unity/unity_internals.h"
+#include "../unity/unity.h"
 
 /* Required by the unity test framework */
 void setUp()
@@ -39,7 +38,7 @@ void test_display(void)
     // TEST_ASSERT_EQUAL_STRING("India",stream.destination);
 }
 
-int main()
+int main(void)
 {
     /* Initiate the Unity Test Framework */
     UNITY_BEGIN();
