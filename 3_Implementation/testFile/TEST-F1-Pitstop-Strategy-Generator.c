@@ -52,6 +52,16 @@ void test_LapTimeInput(void)
     TEST_ASSERT_MESSAGE(lapDetails.Q1TyreLapAge > 0, "Q1 Tyre lap age is negative");
 }
 
+void test_AverageRacePace(void)
+{
+    LapdetailsBeforeGP lapDetails;
+    lapDetails = LapInput();
+
+    int averageRacePace = AvgRacePace(&lapDetails);
+
+    TEST_ASSERT_MESSAGE(averageRacePace > 0, "Average Race Pace is negative");
+}
+
 void test_details(void)
 {
     int a = 1;
@@ -76,6 +86,8 @@ int main(void)
     RUN_TEST(test_display);
     RUN_TEST(test_FileAvailability);
     RUN_TEST(test_LapTimeInput);
+    RUN_TEST(test_AverageRacePace);
+
     /* Close the Unity Test Framework */
     return UNITY_END();
 }
