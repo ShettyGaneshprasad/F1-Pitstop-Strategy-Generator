@@ -84,4 +84,6 @@ TrackDetails trackSelection();
  */
 LapdetailsBeforeGP LapInput();
 
+int AvgRacePace(LapdetailsBeforeGP *);
+
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/
