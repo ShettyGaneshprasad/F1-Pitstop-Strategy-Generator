@@ -25,10 +25,28 @@
  */
 int main(int argc, char **argv)
 {
-    TrackDetails trackDetail;
-    trackDetail = trackSelection();
+
+    // TrackDetails trackDetail;
+    // trackDetail = trackSelection();
 
     LapdetailsBeforeGP lapDetails;
     lapDetails = LapInput();
+    //Module 5
+
+    unsigned int mainDivider = 3;
+    unsigned int subDivider = 2;
+    if (lapDetails.Q1 == 0)
+    {
+        mainDivider = 2;
+        // not qualidfied for Q1
+    }
+    if (lapDetails.Q2 == 0)
+    {
+        subDivider = 1;
+        // not qualidfied for Q2
+    }
+    unsigned int averageRacePace = ((lapDetails.Q1 + ((lapDetails.Q2 + lapDetails.Q3) / subDivider) + (lapDetails.fp1 + lapDetails.fp2 + lapDetails.fp3) / 3) / mainDivider);
+
+    printf("Average race pace is :%u", averageRacePace);
     return 0;
 }
