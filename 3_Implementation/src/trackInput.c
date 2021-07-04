@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
+#include <stdlib.h>
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
 
 /**
@@ -70,63 +71,49 @@ TrackDetails trackSelection()
         if ((currentFileLineNo >= selectedTrackDetailsStartPosition && currentFileLineNo <= selectedTrackDetailsEndPosition))
         {
             LineNO = (currentFileLineNo % 10) + 1;
-            // printf("LineNo %d : ", LineNO);
             if (LineNO == 1)
             {
                 trackDetails.trackUid = atoi(buf);
-                // printf("%u\n", trackDetails.trackUid);
             }
             if (LineNO == 2)
             {
                 strcpy(trackDetails.grandPrixName, buf);
-
-                // printf("%s\n", trackDetails.grandPrixName);
             }
             if (LineNO == 3)
             {
                 strcpy(trackDetails.circuitName, buf);
-                // printf("%s\n", trackDetails.circuitName);
             }
             if (LineNO == 4)
             {
                 trackDetails.timeLostInPits = atoi(buf);
-                // printf("%u\n", trackDetails.timeLostInPits);
             }
             if (LineNO == 5)
             {
                 trackDetails.firstGpHeldYear = atoi(buf);
-                // printf("%u\n", trackDetails.firstGpHeldYear);
             }
             if (LineNO == 6)
             {
                 trackDetails.TotalLapInGP = atoi(buf);
-                // printf("%u\n", trackDetails.TotalLapInGP);
             }
             if (LineNO == 7)
             {
                 trackDetails.circuitLengthKM = atof(buf);
-                // printf("%f\n", trackDetails.circuitLengthKM);
             }
             if (LineNO == 8)
             {
-                trackDetails.raceDistanceKM = atof(buf);
-                // printf("%f\n", trackDetails.raceDistanceKM);
             }
             if (LineNO == 9)
             {
                 strcpy(trackDetails.fastestLapRecord, buf);
-                // printf("%s\n", trackDetails.fastestLapRecord);
             }
             if (LineNO == 10)
             {
                 strcpy(trackDetails.driverHavingFastestLap, buf);
-                // printf("%s\n", trackDetails.driverHavingFastestLap);
             }
-            // printf("%s", buf);
         }
         currentFileLineNo++;
     }
-    // system(“clear”);
+
     for (int screenClearCounter = 0; screenClearCounter < 50; screenClearCounter++)
         putchar('\n');
     printf("So We will be creating our teams Tire Strategy for the %s", trackDetails.grandPrixName);

@@ -15,6 +15,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * @brief Structure to save various track information like track id no
+ * Grandprix name, circuit name, time lost in pits, first GP held year, Total lap in the Gp,
+ * Circuit length in KM, Race distance in that GP, fastest Lap record in that circuit, Driver name having fastest 
+ * lap in that circuit along with the year.
+ * 
+ */
 typedef struct TrackDetails
 {
     unsigned int trackUid;
@@ -31,9 +38,50 @@ typedef struct TrackDetails
 } TrackDetails;
 
 /**
+ * @brief enum to save tyre compound used in the car.
+ * 
+ */
+typedef enum TyreCompound
+{
+    Soft,
+    Medium,
+    Hard
+} TyreCompound;
+
+/**
+ * @brief Structure to hold  all inportant information before race like fp1, fp2, fp3, Q1, Q2, Q3 
+ * nd store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
+ * 
+ */
+typedef struct LapdetailsBeforeGP
+{
+    unsigned int fp1;
+    unsigned int fp2;
+    unsigned int fp3;
+    unsigned int Q1;
+    unsigned int Q2;
+    unsigned int Q3;
+
+    unsigned int Q1TyreLapAge;
+    unsigned int PositionInQ2;
+    unsigned int PositionInQ3;
+
+    TyreCompound Q1Tyre;
+
+} LapdetailsBeforeGP;
+
+/**
  * @brief Take input from user about track
  * 
  */
 TrackDetails trackSelection();
+
+/**
+ * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
+ * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
+ * 
+ * @return LapdetailsBeforeGP 
+ */
+LapdetailsBeforeGP LapInput();
 
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/

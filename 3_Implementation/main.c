@@ -14,6 +14,8 @@
 #include <string.h>
 #include "inc/F1-Pitstop-Strategy-Generator.h"
 #include "src/trackInput.c"
+#include "src/lapTimeInput.c"
+
 /**
  * @brief main function start of our F1-Pitstop-Strategy-Generator
  * 
@@ -26,5 +28,7 @@ int main(int argc, char **argv)
     TrackDetails trackDetail;
     trackDetail = trackSelection();
 
+     LapdetailsBeforeGP lapDetails;
+    lapDetails = LapInput();
     return 0;
 }
