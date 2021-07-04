@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
+#include <stdlib.h>
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
 
 /**
