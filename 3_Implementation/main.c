@@ -28,7 +28,7 @@ int main(int argc, char **argv)
     TrackDetails trackDetail;
     trackDetail = trackSelection();
 
-     LapdetailsBeforeGP lapDetails;
+    LapdetailsBeforeGP lapDetails;
     lapDetails = LapInput();
     return 0;
 }

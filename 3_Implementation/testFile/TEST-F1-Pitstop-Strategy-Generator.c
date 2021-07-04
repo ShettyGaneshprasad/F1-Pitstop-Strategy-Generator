@@ -1,3 +1,14 @@
+/**
+ * @file TEST-F1-Pitstop-Strategy-Generator.c
+ * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <string.h>
 #include "../unity/unity.h"
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
@@ -26,29 +37,15 @@ void test_FileAvailability(void)
 void test_details(void)
 {
     int a = 1;
-    // strcpy(stream.passport,"1234");
-    // strcpy(stream.name,"gs");
-    // strcpy(stream.email,"igsgs@gmail.com");
-    // strcpy(stream.destination,"Inida");
+
     TEST_ASSERT_EQUAL_INT_MESSAGE(1, a, "A is not equal to 1");
-    // TEST_ASSERT_EQUAL_STRING("1234",stream.passport);
-    // TEST_ASSERT_EQUAL_STRING("gsgs",stream.name);
-    // TEST_ASSERT_EQUAL_STRING("gsgs@gmail.com",stream.email);
-    // TEST_ASSERT_EQUAL_STRING("India",stream.destination);
 }
 
 void test_display(void)
 {
     int b = 2;
-    // strcpy(stream.passport,"1234");
-    // strcpy(stream.name,"gsgs");
-    // strcpy(stream.email,"gsgs@gmail.com");
-    // strcpy(stream.destination,"India");
+
     TEST_ASSERT_EQUAL_INT_MESSAGE(2, b, "B is not equal to 2");
-    // TEST_ASSERT_EQUAL_STRING("1234",stream.passport);
-    // TEST_ASSERT_EQUAL_STRING("isha",stream.name);
-    // TEST_ASSERT_EQUAL_STRING("gsgs@gmail.com",stream.email);
-    // TEST_ASSERT_EQUAL_STRING("India",stream.destination);
 }
 
 int main(void)
