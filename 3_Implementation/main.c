@@ -15,6 +15,7 @@
 #include "inc/F1-Pitstop-Strategy-Generator.h"
 #include "src/trackInput.c"
 #include "src/lapTimeInput.c"
+#include "src/avgRacePace.c"
 
 /**
  * @brief main function start of our F1-Pitstop-Strategy-Generator
@@ -25,10 +26,13 @@
  */
 int main(int argc, char **argv)
 {
+
     TrackDetails trackDetail;
     trackDetail = trackSelection();
 
     LapdetailsBeforeGP lapDetails;
     lapDetails = LapInput();
+
+    int averageRacePace = AvgRacePace(&lapDetails);
     return 0;
 }
