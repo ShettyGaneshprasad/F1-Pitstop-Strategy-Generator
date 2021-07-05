@@ -45,7 +45,7 @@
 LapdetailsBeforeGP LapInput()
 {
 
-    LapdetailsBeforeGP lapdetails = {0, 0, 0, 0, 0, 0, 0, 0, 0, Soft};
+    LapdetailsBeforeGP lapdetails = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     unsigned int switchSelection;
     unsigned int whileChecker = 1;
