@@ -16,6 +16,7 @@
 #include "src/trackInput.c"
 #include "src/lapTimeInput.c"
 #include "src/avgRacePace.c"
+#include "src/stintTime.c"
 
 /**
  * @brief main function start of our F1-Pitstop-Strategy-Generator
@@ -34,5 +35,9 @@ int main(int argc, char **argv)
     lapDetails = LapInput();
 
     int averageRacePace = AvgRacePace(&lapDetails);
+
+    TyreDetails tyreDetail;
+    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail);
+
     return 0;
 }

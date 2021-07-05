@@ -17,5 +17,5 @@
 
 - Tyre Unique Number
 - Tyre Type
-- Tyre Speed offset compared to Soft compound in Seconds
-- Average Tyre Degradation per lap.
+- Tyre Speed offset compared to Soft compound in Seconds after point example 0.35 second is written as 35
+- Average Tyre Degradation per lap.... after point example 0.35 second is written as 35

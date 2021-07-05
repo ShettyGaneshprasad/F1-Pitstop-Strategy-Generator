@@ -128,5 +128,6 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     }
 
     free(fptr);
+
     return totalStintTime;
 }
