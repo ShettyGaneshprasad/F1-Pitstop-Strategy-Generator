@@ -22,6 +22,7 @@
 TrackDetails trackSelection()
 {
     TrackDetails trackDetails;
+    trackDetails.raceDistanceKM = 0;
     errno = 0;
     int number_of_seconds = 2;
     FILE *fptr = NULL;
