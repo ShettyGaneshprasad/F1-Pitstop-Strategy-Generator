@@ -86,4 +86,15 @@ LapdetailsBeforeGP LapInput();
 
 int AvgRacePace(LapdetailsBeforeGP *);
 
+typedef struct TyreDetails
+{
+    TyreCompound TyreCompound;
+    unsigned int SpeedOffset;
+    unsigned int TyreDegradation;
+    unsigned int MaxTyreLapAge;
+
+} TyreDetails;
+
+StintTime(LapdetailsBeforeGP *, TyreDetails *, TrackDetails *);
+
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/
