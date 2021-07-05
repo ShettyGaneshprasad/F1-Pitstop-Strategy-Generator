@@ -114,6 +114,7 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
         LineNO++;
     }
 
+    fclose(fptr);
     printf("\nSelectedTyre  : %d", tyreDetail->TyreCompound);
     printf("Speed Off Set %u \n", tyreDetail->SpeedOffset);
     printf("Tyre Deg %u \n", tyreDetail->TyreDegradation);
@@ -126,8 +127,6 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
         currentLap++;
         currentLapNo++;
     }
-
-    free(fptr);
 
     return totalStintTime;
 }
