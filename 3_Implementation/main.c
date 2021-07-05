@@ -16,6 +16,7 @@
 #include "src/trackInput.c"
 #include "src/lapTimeInput.c"
 #include "src/avgRacePace.c"
+#include "src/stintTime.c"
 
 /**
  * @brief main function start of our F1-Pitstop-Strategy-Generator
