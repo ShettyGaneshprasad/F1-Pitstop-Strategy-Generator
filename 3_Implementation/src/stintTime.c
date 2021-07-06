@@ -21,11 +21,12 @@
  * @return LapdetailsBeforeGP 
  * 
  */
-int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail)
+
+int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, int lastStint) //1 if true 0 if false
 {
-    int currentLap = 0; //from  parameter
+    //from  parameter
     int currentTyreLapAge = lapDetails->Q1TyreLapAge;
-    int currentLapNo = currentLap;
+    int currentLapNo = raceDetail->currentLap;
     int totalStintTime = 0; //in seconds
     // TyreDetails tyreDetail;
 
@@ -120,12 +121,21 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     printf("Tyre Deg %u \n", tyreDetail->TyreDegradation);
     printf("tyre lap age %u \n", tyreDetail->MaxTyreLapAge);
 
-    while (currentLapNo <= trackDetail->TotalLapInGP && currentTyreLapAge <= tyreDetail->MaxTyreLapAge)
+    while (currentLapNo <= trackDetail->TotalLapInGP)
     {
-
-        totalStintTime += 1; //add that laptime in stint
-        currentLap++;
-        currentLapNo++;
+        if (currentTyreLapAge <= tyreDetail->MaxTyreLapAge)
+        {
+            totalStintTime += 1; //add that laptime in stint
+            currentLapNo++;
+            currentTyreLapAge++;
+        }
+        else
+        {
+            if (lastStint)
+            {
+                return totalStintTime = 99999999;
+            }
+        }
     }
 
     return totalStintTime;

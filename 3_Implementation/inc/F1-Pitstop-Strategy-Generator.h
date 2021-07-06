@@ -95,6 +95,12 @@ typedef struct TyreDetails
 
 } TyreDetails;
 
-int StintTime(LapdetailsBeforeGP *, TyreDetails *, TrackDetails *);
+typedef struct RaceDetails
+{
+    unsigned int currentLap;
+
+} RaceDetails;
+
+int StintTime(LapdetailsBeforeGP *, TyreDetails *, TrackDetails *, RaceDetails *, int);
 
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/
