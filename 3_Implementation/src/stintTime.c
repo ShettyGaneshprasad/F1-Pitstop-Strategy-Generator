@@ -1,9 +1,9 @@
 /**
  * @file trackInput.c
  * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
- * @brief Calculating stint time
+ * @brief Calculating that lap time considering tyre deg
  * @version 0.1
- * @date 2021-07-05
+ * @date 2021-07-06
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -125,7 +125,8 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     {
         if (currentTyreLapAge <= tyreDetail->MaxTyreLapAge)
         {
-            totalStintTime += 1; //add that laptime in stint
+            totalStintTime += CurrentLapTime(tyreDetail, trackDetail, raceDetail); //add that laptime in stint
+
             currentLapNo++;
             currentTyreLapAge++;
         }
