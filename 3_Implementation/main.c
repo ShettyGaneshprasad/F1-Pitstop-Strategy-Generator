@@ -37,7 +37,8 @@ int main(int argc, char **argv)
     int averageRacePace = AvgRacePace(&lapDetails);
 
     TyreDetails tyreDetail;
-    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail);
+    RaceDetails raceDetail;
+    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail, &raceDetail, 0);
 
     return 0;
 }
