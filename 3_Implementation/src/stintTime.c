@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
-#include "currentLapTime.c"
+#include "../../3_Implementation/src/currentLapTime.c"
 
 //TyreDetails
 
