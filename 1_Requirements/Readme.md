@@ -1,60 +1,75 @@
 # Requirements
 
-## Introduction
+## Introduction to F1 Pitstop Strategy Generator
+ 
+- While the constructors compete by developing their engine and chassis with the latest technologies, real-time race simulations are also conducted back in the factories to provide useful insights that could greatly affect team decision making before and during the race. The results are sent to the pit wall, where the race engineers make pit stop strategy decisions and communicate with the drivers and all pit crew members.
 
-- Unit conversion is used in daily life for research purposes, education purposes, manufacturing, and in many other fields. So it is necessary to have software that can help in the accurate and fast conversion of units from one to another.
-- I chose this topic to build a light and reliable application for unit conversion purposes.
+## Motivation for the Project
+- I chose this topic as i am very passionate about motorsports specially F1 which involve talent of the driver but also Team strategy in the race. Without a proper team strategy no driver can win F1 race even if he is most talented driver on the grid
+- In the past decade, top teams such as Mercedes Benz, Scuderia Ferrari, Red Bull, and McLaren F1 Racing has committed huge and fatal pit-stop strategy calls, costing them victories or even the championships. Infamous instances include the 2012 Abu Dhabi GP Alonso’s too-early pit-stop, 2015 Monaco GP Hamilton too-late pit-stop, and the list goes on. When car competitiveness and driver skill level have marginal distinctness, the pit-stop strategy can be very decisive, if not determinant, to the race result. A good pit-stop allows overtaking without even a high-risk close car fight, while a bad pit-stop could put the car in traffic, harming the tyres and the possibility to make overtaking maneuvers.
 
 ## Process Overview
 
-The process of conversion depends on the specific situation and the intended purpose. This may be governed by regulation, contract, technical specifications, or other published standards. Engineering judgment may include such factors as:
+The process of generating strategy for the race include collecting all data from Free Practice 1,Free Practice 2,Free Practice 3, Qualifying Session 3,Qualifying Session 2,Qualifying Session 1 so we can calculate average race pace of the car for the weekend Race. We also collect Track name so we can use data of that track like Total Lap in Grand Prix, total circuit length in KM, total time lost in the pits, total Race distance in KM and once we get all the data we calculate using our algorithim which simulate race and give optimum strategy for the race.
 
-- The precision and accuracy of measurement and the associated uncertainty of measurement.
-- The statistical confidence interval or tolerance interval of the initial measurement.
-- The number of significant figures of the measurement.
-- The intended use of the measurement including the engineering tolerances.
-- Historical definitions of the units and their derivatives used in old measurements; e.g., international foot vs. US survey foot.
+PitStop Strategy include factors like:
 
-Some conversions from one system of units to another need to be exact, without increasing or decreasing the first measurement's precision. This is sometimes called **soft conversion**. It does not involve changing the physical configuration of the item being measured.
+- Average Race Pace of car is taken as input from
+  - Free Practice 1 (FP1)
+  - Free Practice 2 (FP2)
+  - Free Practice 3 (FP3)
+  - Qualifying Session 3 (Q3)
+    - Here programm will ask for qualfying position (if its greater than P15 i.e car is not eligible for Q2 )
+  - Qualifying Session 2 (Q2)
+     - Here programm will ask for qualfying position (if its greater than P10 i.e car is not eligible for Q1 )
+  - Qualifying Session 1 (Q1)
+     - Here programm will ask for Tyre used in Q1 (According to FIA rule Cars qualified for Q1 will have to start their race from same tyre which was used in Q1 so this information is important for strategy genration)
 
-By contrast, a **hard conversion** or an **adaptive conversion** may not be exactly equivalent. It changes the measurement to convenient and workable numbers and units in the new system. It sometimes involves a slightly different configuration, or size substitution, of the item. Nominal values are sometimes allowed and used.
+- Once we get all the imput from session before the GrandPrix we will use received data and calculate average race pace of the car for that weekend using our algorithim
+<!--   - ``` if(driverHasQualifiedForQ1){```
+  - ``` mainDivider=3;```
+  - ```}```
+  
+  - ``` if(driverHasQualifiedForQ2){```
+  - ```   subDivider=2;```
+  - ``` }```
+  - ```unsigned int averageRacePace = (   ( averageTimeinQ1 + (  ( averageTimeinQ2 + averageTimeinQ3) / subDivider  ) + (  averageTimeinfp1 + averageTimeinfp2 + averageTimeinfp3  ) / 3) / mainDivider   );```
+ -->
+
+- Once User selects the track he is racing our programme will load all track data from the file to our programme i.e 
+  - Grand Prix name
+  - Circuit name
+  - Average Time lost in the pits
+  - First GP held year
+  - Number of Laps
+  - Circuit length in KM
+  - Race Distance in KM
+  - Lap record time in MM:SS:MS
+  - Lap record by driver name with year
+
+- This Programme also takes account of the increase in race pace during end of the race as fuel is burnt which in turns make car lighter and faster.
+- Tyre details file is also used for building strategy we have 3 type of dry tyre
+  - Soft Compound Tyre
+  - Medium Compound Tyre
+  - Hard Compound Tyre
+    - Tyre Speed offset compared to Soft compound in Seconds
+    - Average Tyre Degradation per lap
 
 ## Research
 
 ### Benefits
 
-- Lightweight and can be accessed from any device
+- Race enginner can create strategy based on the race pace of the car by collectin data 
 - Help researchers: It can help them find results with high accuracy of different unit types
 - Fast: Compute the results within a fraction of seconds
 - Education: Students can be benefitted from this. They can use it for learning purposes.
 
-### AGE
 
-| 1960s                                                                   | 1980s                                                                     | 2000                                                                                    | Present                                                                                                                   |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Calculators with small keyboards having paper tapes for output display. | Calculator with 12-digit display in red LED and with integrated circuits. | Introduction of graphing calculators, affordable, dual powered with the liquid display. | Advanced calculators which can handle higher-level math which is ideal for everything from economics to computer science. |
 
-### COST
-
-| 1960s     | 1980s     | 2000    | Present |
-| --------- | --------- | ------- | ------- |
-| 360$-400$ | 700$-800$ | 20$-30$ | 10$-12$ |
-
-## Defining Our System
-
-- Assumptions
-
-  - Data filled or expected result cannot be greater than maximum data that a data type can store.
-  - User knows what he/she wants from the application
-
-- Explanation
-  - Firstly unit type should be selected
-  - Secondly **from** and **to** value should be selected
-  - Then, operand should be filled and at last press enter to find the result
 
 ## SWOT ANALYSIS
 
-![SWOT Analysis](https://github.com/KrShivanshu/CMiniProject/blob/main/6_ImagesAndVideos/Requirements/SWOT%20Analysis.jpg)
+![SWOT Analysis](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/1_Requirements/F1_SWOT_Analysis.jpg)
 
 ## 4W&#39;s and 1&#39;H
 
