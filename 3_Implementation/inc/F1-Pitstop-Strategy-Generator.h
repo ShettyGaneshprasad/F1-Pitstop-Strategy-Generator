@@ -98,9 +98,12 @@ typedef struct TyreDetails
 typedef struct RaceDetails
 {
     unsigned int currentLap;
+    unsigned int averageRacePace;
 
 } RaceDetails;
 
 int StintTime(LapdetailsBeforeGP *, TyreDetails *, TrackDetails *, RaceDetails *, int);
+
+int CurrentLapTime(TyreDetails *, TrackDetails *, RaceDetails *);
 
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/

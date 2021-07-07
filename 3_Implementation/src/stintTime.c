@@ -1,9 +1,9 @@
 /**
  * @file trackInput.c
  * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
- * @brief Calculating stint time
+ * @brief Calculating that lap time considering tyre deg
  * @version 0.1
- * @date 2021-07-05
+ * @date 2021-07-06
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
+#include "currentLapTime.c"
 
 //TyreDetails
 
@@ -24,6 +25,7 @@
 
 int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, int lastStint) //1 if true 0 if false
 {
+
     //from  parameter
     int currentTyreLapAge = lapDetails->Q1TyreLapAge;
     int currentLapNo = raceDetail->currentLap;
@@ -36,6 +38,8 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     // soft tyre
     {
         fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
+        tyreDetail->TyreCompound = Soft;
+        printf("tyre file selected Soft");
     }
     else
     {
@@ -43,12 +47,16 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
         //Medium Tyre
         {
             fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
+            tyreDetail->TyreCompound = Medium;
+            printf("tyre file selected Medium");
         }
         else
         //Hard Tyre
         {
 
             fptr = fopen("../7_Data/HardCompoundTyre.txt", "a+");
+            tyreDetail->TyreCompound = Hard;
+            printf("tyre file selected Hard");
         }
     }
     if (fptr == NULL)
@@ -59,43 +67,11 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     }
 
     char buf[100];
-    int whileChecker = 1;
-    int switchSelection;
 
     int LineNO = 1;
     while (fgets(buf, sizeof(buf), fptr))
     {
 
-        if (LineNO == 1)
-        {
-            while (whileChecker)
-            {
-
-                printf("\nTyre Used in Q1 :\nEnter 1 if Soft tyre Compound\nEnter 2 if Medium Tyre Compound\nEnter 3 if Hard Tyre Compound:\n");
-
-                scanf("%u", &switchSelection);
-
-                switch (switchSelection)
-                {
-                case 1:
-                    tyreDetail->TyreCompound = Soft;
-                    whileChecker = 0;
-                    break;
-                case 2:
-                    tyreDetail->TyreCompound = Medium;
-                    whileChecker = 0;
-                    break;
-                case 3:
-                    tyreDetail->TyreCompound = Hard;
-                    whileChecker = 0;
-                    break;
-
-                default:
-                    printf("\nInvalid Input-Try again\n");
-                }
-            }
-            // strcpy(tyreDetail.Q1Tyre, buf);
-        }
         if (LineNO == 2)
         {
 
@@ -116,16 +92,21 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
     }
 
     fclose(fptr);
-    printf("\nSelectedTyre  : %d", tyreDetail->TyreCompound);
+    printf("\nSelectedTyre  : %d\n", tyreDetail->TyreCompound);
     printf("Speed Off Set %u \n", tyreDetail->SpeedOffset);
     printf("Tyre Deg %u \n", tyreDetail->TyreDegradation);
     printf("tyre lap age %u \n", tyreDetail->MaxTyreLapAge);
 
     while (currentLapNo <= trackDetail->TotalLapInGP)
     {
+        printf("Outer Loop start\ncurrent Lap no-%d\ntotal lap in gp %u", currentLapNo, trackDetail->TotalLapInGP);
+
         if (currentTyreLapAge <= tyreDetail->MaxTyreLapAge)
         {
-            totalStintTime += 1; //add that laptime in stint
+            printf("\ninside while if\ncurrentTyreLapAge-%d\ntyreDetail->MaxTyreLapAge %u\n", currentTyreLapAge, tyreDetail->MaxTyreLapAge);
+
+            totalStintTime += CurrentLapTime(tyreDetail, trackDetail, raceDetail); //add that laptime in stint
+
             currentLapNo++;
             currentTyreLapAge++;
         }
@@ -135,6 +116,7 @@ int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDeta
             {
                 return totalStintTime = 99999999;
             }
+            return totalStintTime;
         }
     }
 

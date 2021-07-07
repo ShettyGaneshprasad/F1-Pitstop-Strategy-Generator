@@ -33,12 +33,15 @@ int main(int argc, char **argv)
 
     LapdetailsBeforeGP lapDetails;
     lapDetails = LapInput();
+    RaceDetails raceDetail;
 
-    int averageRacePace = AvgRacePace(&lapDetails);
+    raceDetail.averageRacePace = AvgRacePace(&lapDetails);
 
     TyreDetails tyreDetail;
-    RaceDetails raceDetail;
-    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail, &raceDetail, 0);
+    //checked above all clear
+    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail, &raceDetail, 1);
+
+    printf("firstStint::%d", firstStintTime);
 
     return 0;
 }
