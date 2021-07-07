@@ -75,23 +75,23 @@ PitStop Strategy include factors like:
 
 ## Who
 
-- For researchers, manufactures, educators and students.
+- For F1 race enginners, Team principle, and alsofor fans like us who want to  their favourite teams strategy.
 
 ## What
 
-- A unit converter is a tool used to convert a unit from one to another like Kilometer to Meter, Celsius to Kelvin, etc.
+- Race engineers can use this tool to make pit stop strategy decisions based on average race pace, Tyre used and track.
 
 ## Where
 
-- Can be used in manufacturing companies, schools, colleges, examination halls, and research labs.
+- Can be used in Formula 1 race to devise best available strategy for tha Grand Prix.
 
 ## When
 
-- When we want to find the value (X Celsius in Fahrenheit), (Y kilometers in meter), etc.
+- Before the race so stategist can decide Strategy for GrandPrix 
 
 ## How
 
-- Run the application, fill the options, give the value and find the result.
+- Run the application, fill the inputs asked on the console and find the result.
 
 ## Detail requirements
 
