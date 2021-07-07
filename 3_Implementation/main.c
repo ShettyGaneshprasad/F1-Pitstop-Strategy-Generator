@@ -17,6 +17,7 @@
 #include "src/lapTimeInput.c"
 #include "src/avgRacePace.c"
 #include "src/stintTime.c"
+#include "src/calculateRaceStrategy.c"
 
 /**
  * @brief main function start of our F1-Pitstop-Strategy-Generator
@@ -31,17 +32,22 @@ int main(int argc, char **argv)
     TrackDetails trackDetail;
     trackDetail = trackSelection();
 
-    LapdetailsBeforeGP lapDetails;
-    lapDetails = LapInput();
+    LapdetailsBeforeGP lapDetailsBeforeGP;
+    lapDetailsBeforeGP = LapInput();
     RaceDetails raceDetail;
 
-    raceDetail.averageRacePace = AvgRacePace(&lapDetails);
+    raceDetail.averageRacePace = AvgRacePace(&lapDetailsBeforeGP);
 
     TyreDetails tyreDetail;
-    //checked above all clear
-    int firstStintTime = StintTime(&lapDetails, &tyreDetail, &trackDetail, &raceDetail, 1);
+    // //checked above all clear
+    // int firstStintTime = StintTime(1, &lapDetailsBeforeGP, &tyreDetail, &trackDetail, &raceDetail, 0);
 
-    printf("firstStint::%d", firstStintTime);
+    // printf("firstStint::%d", firstStintTime);
+    ////adding above code inside calculate race strategy
+
+    // calculate all race strategy
+    PitStopStrategy pitStopStrategy;
+    calculateRaceStrategy(&tyreDetail, &trackDetail, &raceDetail, &pitStopStrategy, &lapDetailsBeforeGP);
 
     return 0;
 }

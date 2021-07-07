@@ -23,47 +23,56 @@
  * 
  */
 
-int StintTime(LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, int lastStint) //1 if true 0 if false
+int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, int lastStint) //1 if true 0 if false
 {
 
-    //from  parameter
     int currentTyreLapAge = lapDetails->Q1TyreLapAge;
     int currentLapNo = raceDetail->currentLap;
     int totalStintTime = 0; //in seconds
-    // TyreDetails tyreDetail;
-
+                            // TyreDetails tyreDetail;
     FILE *fptr = NULL;
 
-    if (0 == lapDetails->Q1Tyre)
-    // soft tyre
+    //checking if first stint if first stint use Q1 tyre
+    if (1 == StintCount)
     {
-        fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
-        tyreDetail->TyreCompound = Soft;
-        printf("tyre file selected Soft");
+
+        if (0 == lapDetails->Q1Tyre)
+        // soft tyre
+        {
+            fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
+            tyreDetail->TyreCompound = Soft;
+            printf("tyre file selected Soft");
+        }
+        else
+        {
+            if (1 == lapDetails->Q1Tyre)
+            //Medium Tyre
+            {
+                fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
+                tyreDetail->TyreCompound = Medium;
+                printf("tyre file selected Medium");
+            }
+            else
+            //Hard Tyre
+            {
+
+                fptr = fopen("../7_Data/HardCompoundTyre.txt", "a+");
+                tyreDetail->TyreCompound = Hard;
+                printf("tyre file selected Hard");
+            }
+        }
+        if (fptr == NULL)
+        {
+            perror("File Opening Error");
+            fprintf(stderr, "%s\n", strerror(errno));
+            exit(EXIT_FAILURE);
+        }
     }
     else
     {
-        if (1 == lapDetails->Q1Tyre)
-        //Medium Tyre
+        if (2 == StintCount)
         {
-            fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
-            tyreDetail->TyreCompound = Medium;
-            printf("tyre file selected Medium");
         }
-        else
-        //Hard Tyre
-        {
-
-            fptr = fopen("../7_Data/HardCompoundTyre.txt", "a+");
-            tyreDetail->TyreCompound = Hard;
-            printf("tyre file selected Hard");
-        }
-    }
-    if (fptr == NULL)
-    {
-        perror("File Opening Error");
-        fprintf(stderr, "%s\n", strerror(errno));
-        exit(EXIT_FAILURE);
     }
 
     char buf[100];
