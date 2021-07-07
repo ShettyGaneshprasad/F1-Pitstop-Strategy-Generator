@@ -10,7 +10,7 @@
 - Number of Laps
 - Circuit length in KM
 - Race Distance in KM
-- Lap record time MM:SS:MS
+- Lap record time in MM:SS:MS
 - Lap record by driver name with year
 
 ## Tyre data format

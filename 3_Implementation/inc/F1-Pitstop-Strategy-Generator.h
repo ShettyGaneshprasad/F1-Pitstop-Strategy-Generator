@@ -45,7 +45,8 @@ typedef enum TyreCompound
 {
     Soft,
     Medium,
-    Hard
+    Hard,
+    None
 } TyreCompound;
 
 /**
@@ -70,22 +71,6 @@ typedef struct LapdetailsBeforeGP
 
 } LapdetailsBeforeGP;
 
-/**
- * @brief Take input from user about track
- * 
- */
-TrackDetails trackSelection();
-
-/**
- * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
- * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
- * 
- * @return LapdetailsBeforeGP 
- */
-LapdetailsBeforeGP LapInput();
-
-int AvgRacePace(LapdetailsBeforeGP *);
-
 typedef struct TyreDetails
 {
     TyreCompound TyreCompound;
@@ -102,8 +87,39 @@ typedef struct RaceDetails
 
 } RaceDetails;
 
-int StintTime(LapdetailsBeforeGP *, TyreDetails *, TrackDetails *, RaceDetails *, int);
+typedef struct PitStopStrategy
+{
+    unsigned int TotalPitStop;   // can be 1 for 1 stop i.e 2 tyre needed for full race
+    TyreCompound firstStintTyre; //
+    TyreCompound secondStintTyre;
+    TyreCompound thirdStintTyre; //not needed for 1 stop race if not needed assign None
+
+} PitStopStrategy;
+
+/**
+ * @brief Take input from user about track
+ * 
+ */
+TrackDetails trackSelection();
+
+/**
+ * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
+ * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
+ * 
+ * @return LapdetailsBeforeGP 
+ */
+LapdetailsBeforeGP LapInput();
+
+int AvgRacePace(LapdetailsBeforeGP *);
+
+int StintTime(int, LapdetailsBeforeGP *, TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, int);
 
 int CurrentLapTime(TyreDetails *, TrackDetails *, RaceDetails *);
+
+int calculateRaceStrategy(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
+
+int Calculate1StopStrategyTime(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
+
+int Calculate2StopStrategyTime(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
 
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/

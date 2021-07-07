@@ -12,30 +12,6 @@
 #include <unistd.h>
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
 
-// typedef enum TyreCompound
-// {
-//     Soft,
-//     Medium,
-//     Hard
-// } TyreCompound;
-
-// typedef struct LapdetailsBeforeGP
-// {
-//     unsigned int fp1;
-//     unsigned int fp2;
-//     unsigned int fp3;
-//     unsigned int Q1;
-//     unsigned int Q2;
-//     unsigned int Q3;
-
-//     unsigned int Q1TyreLapAge;
-//     unsigned int PositionInQ2;
-//     unsigned int PositionInQ3;
-
-//     TyreCompound Q1Tyre;
-
-// } LapdetailsBeforeGP;
-
 /**
  * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
  * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
