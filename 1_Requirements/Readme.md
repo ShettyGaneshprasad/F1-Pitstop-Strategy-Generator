@@ -100,9 +100,9 @@ PitStop Strategy include factors like:
 | ID   | Description                                                                                                                                     | Category       | Status (Implemented/ InProgress/ Future) |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------- |
 | HR01 | Able to Select Track from the data on the file on which grand Prix will be held           | Functional     | Implemented                              |
-| HR02 | Calculate Average race pace of the car                                  | Functional     | Implemented                              |
+| HR02 |                                | Functional     | Implemented                              |
 | HR03 | User to resolve the errors if the calculation for conversions is impossible, then the convertor must display information helping the situation. | Non-Functional | Future                                   |
-| HR04 | After performing one calculation user can perform another calculation by using the result obtained in the previous calculation.                 | Functional     | InProgress                               |
+| HR04 | Calculate Average race pace of the car                | Functional     | InProgress                               |
 
 ### Low level Requirements
 
@@ -112,13 +112,16 @@ PitStop Strategy include factors like:
 | LR02   | Take Input from the user to select which Grand Prix we will be creating Strategy for                 | HR01       | Implemented                              |
 | LR03   | Once the track is selected Display all the information about that track on the console               | HR01       | Implemented                              |
 | LR04   | Save the Track details in to the programme for further computation of strategy                       | HR01       | Implemented                              |
-| LR05   | Take input of 
-  - Free Practice 1 (FP1)
-  - Free Practice 2 (FP2)
-  - Free Practice 3 (FP3)                                                  | HR02       | Implemented                              |
-| LR06   | Should calculate the result up to minimal decimal point                                              | HR02       | Implemented                              |
-| LR06.1 | Shouldn't round off the answer and display the result with accuracy & precision                      | HR02       | Implemented                              |
-| LR07   | If the answer exceeds the maximum value it can store, display an error message to the user           | HR02, HR03 | Future                                   |
-| LR07.1 | Ask the user to reduce the size of operand                                                           | HR02, HR03 | Future                                   |
-| LR08   | Should able to store the result for future use                                                       | HR04       | In Progress                              |
-| LR08.1 | Displays options to act on the stored result                                                         | HR04       | Future                                   |
+| LR05   | Take input of best lap time of Free Practice 1 (FP1).                                                | HR02       | Implemented                              |
+| LR06   | Take input of best lap time of Free Practice 2 (FP2).                                                | HR02       | Implemented                              |
+| LR07   | Take input of best lap time of Free Practice 3 (FP3).                                                | HR02       | Implemented                              |
+| LR08   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR02       | Implemented                              |
+| LR09   | Check if qualified for Q2 i.e  Qualified Positon is less then 15                                     | HR02       | Implemented                              |
+| LR10   | Take input of best lap time of Qualifying 2 (Q2).                                                    | HR04       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
+| LR11   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR04       | Implemented                              |
+| LR11   | Check which tyre is                                      | HR04       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
