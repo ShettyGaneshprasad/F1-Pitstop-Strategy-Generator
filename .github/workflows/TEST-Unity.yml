@@ -4,10 +4,10 @@ on:
   push:
     branches: [Production]
   pull_request:
-    branches: [Productions]
+    branches: [Production]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
