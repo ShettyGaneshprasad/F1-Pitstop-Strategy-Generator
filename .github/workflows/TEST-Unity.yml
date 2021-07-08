@@ -2,9 +2,9 @@ name: Unit Testing - Unity
 
 on:
   push:
-    branches: [main]
+    branches: [Production]
   pull_request:
-    branches: [main]
+    branches: [Productions]
 
 jobs:
   test:
