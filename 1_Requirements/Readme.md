@@ -91,7 +91,7 @@ PitStop Strategy include factors like:
 
 ## How
 
-- Run the application, fill the inputs asked on the console and find the result.
+- Run the application, fill the inputs asked on the console and find the Strategy Suitable for that Grand Prix.
 
 ## Detail requirements
 
@@ -99,8 +99,8 @@ PitStop Strategy include factors like:
 
 | ID   | Description                                                                                                                                     | Category       | Status (Implemented/ InProgress/ Future) |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------- |
-| HR01 | Able to convert any units like length, temperature, volume, weight, area, and time                                                              | Functional     | Implemented                              |
-| HR02 | In any situation, the calculator must produce a correct result defined by the well-known arithmetic rules.                                      | Functional     | Implemented                              |
+| HR01 | Able to Select Track from the data on the file on which grand Prix will be held           | Functional     | Implemented                              |
+| HR02 | Calculate Average race pace of the car                                  | Functional     | Implemented                              |
 | HR03 | User to resolve the errors if the calculation for conversions is impossible, then the convertor must display information helping the situation. | Non-Functional | Future                                   |
 | HR04 | After performing one calculation user can perform another calculation by using the result obtained in the previous calculation.                 | Functional     | InProgress                               |
 
@@ -108,11 +108,14 @@ PitStop Strategy include factors like:
 
 | ID     | Description                                                                                          | HLR ID     | Status (Implemented/ InProgress/ Future) |
 | ------ | ---------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------- |
-| LR01   | Can display options for selecting the unit type and receive input for it                             | HR01       | Implemented                              |
-| LR02   | Can display options for a unit to be converted **from** and receive input for it                     | HR01       | Implemented                              |
-| LR03   | Able to give options to select the unit to be converted **to** and successively receive input for it | HR01       | Implemented                              |
-| LR04   | Recieve input for an operand to be converted                                                         | HR01       | Implemented                              |
-| LR05   | Able to compute, convert and display the results                                                     | HR01       | Implemented                              |
+| LR01   | Read File data on which circuit are available for that season of F1 Grand Prix                       | HR01       | Implemented                              |
+| LR02   | Take Input from the user to select which Grand Prix we will be creating Strategy for                 | HR01       | Implemented                              |
+| LR03   | Once the track is selected Display all the information about that track on the console               | HR01       | Implemented                              |
+| LR04   | Save the Track details in to the programme for further computation of strategy                       | HR01       | Implemented                              |
+| LR05   | Take input of 
+  - Free Practice 1 (FP1)
+  - Free Practice 2 (FP2)
+  - Free Practice 3 (FP3)                                                  | HR02       | Implemented                              |
 | LR06   | Should calculate the result up to minimal decimal point                                              | HR02       | Implemented                              |
 | LR06.1 | Shouldn't round off the answer and display the result with accuracy & precision                      | HR02       | Implemented                              |
 | LR07   | If the answer exceeds the maximum value it can store, display an error message to the user           | HR02, HR03 | Future                                   |
