@@ -1,5 +1,6 @@
-# SDLC Activity Based Learning ![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg)
-
+# SDLC Activity Based Learning 
+<!-- ![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg)
+ -->
 
 
 Build | Code Quality |Unity Testing | Codacy & CodeInspector|
