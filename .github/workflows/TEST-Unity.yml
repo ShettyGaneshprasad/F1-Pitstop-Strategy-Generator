@@ -12,5 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: make
-        run: make -C 3_Implementation/ test
+      - name: changeDir
+        run: cd 3_Implementation/
+      - name: test
+        run: make -C test
