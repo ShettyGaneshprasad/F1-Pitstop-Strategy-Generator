@@ -18,4 +18,4 @@ jobs:
       - name: make
         run: make -C 3_Implementation/ all
       - name: Valgrind
-        run: valgrind ./3_Implementation/F1-Pitstop-Strategy-Generator.out
+        run: valgrind ./3_Implementation/Build/F1-Pitstop-Strategy-Generator.out
