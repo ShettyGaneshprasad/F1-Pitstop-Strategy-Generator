@@ -15,4 +15,4 @@ jobs:
       - name: changeDir
         run: cd 3_Implementation/
       - name: test
-        run: make -C test
+        run: make test
