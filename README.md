@@ -35,11 +35,12 @@ Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
 | Folder  | Description  |
 |--- |--- |
 | 1_Requirements | Documents detailing requirements and research |
-| 2_Design | Structural and Behavioural UML Diagrams for High Level and Low level |
+| 2_Architecture |  Structural and Behavioural UML Diagrams for High Level and Low level |
 | 3_Implementation | All code and documentation |
 | 4_Test Plan and Output | Documents with test plans and outputs |
 | 5_Report | Generated Report |
 | 6_ImagesandVideos | All the UML diagrams and other required images |
+| 7_Data | Files having text file including information about track and tyre data needed for the programme |
 
 ## Contribution List
 
