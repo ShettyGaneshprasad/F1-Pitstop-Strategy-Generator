@@ -1,4 +1,4 @@
-# SDLC Activity Based Learning 
+# SDLC Activity Based Learning ->  Pitstop Strategy Generator
 <!-- ![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg) -->
 
 
@@ -25,7 +25,7 @@ Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
    <img src="https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark"alt="code inspector badge" />
 </a> -->
 
-## F1 Pitstop Strategy Generator
+# F1 Pitstop Strategy Generator
 ![F1 Pitstop Strategy Generator](https://cdn-wp.thesportsrush.com/2021/03/eb255945-personal-vlog-youtube-thumbnail-2021-03-28t223255.924.jpg)
 
 ## Introduction to F1 Pitstop Strategy Generator
