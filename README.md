@@ -110,9 +110,9 @@ PitStop Strategy include factors like:
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------- |
 | HR01 | Able to Select Track from the data on the file on which grand Prix will be held           | Functional     | Implemented                              |
 | HR02 | Display Track Information and save needed data from file into programm needed for computation    | Non-Functional    | Implemented                              |
-| HR03 | Take input of all needed race weekend information about car pace| Functional | Future                                   |
-| HR04 | Calculate Average race pace of the car                | Functional     | InProgress                               |
-| HR05 | Select Strategy for the race            | Functional     | InProgress                               |
+| HR03 | Take input of all needed race weekend information about car pace| Functional | Implemented                                   |
+| HR04 | Calculate Average race pace of the car                | Functional     | Implemented                            |
+| HR05 | Select Strategy for the race            | Functional     | In Progress                               |
 
 ### Low level Requirements
 
@@ -132,9 +132,9 @@ PitStop Strategy include factors like:
 | LR13   | Take input on which tyre is used in Q1                                                               | HR03       | Implemented                              |
 | LR14   | Take input on what was the tyre age in Q1 as same tyre will be used in the race                      | HR03       | Implemented                              |
 | LR15   | Calculate Average Race pace from all qualyfing and Practice session                                  | HR03       | Implemented                              |
-| LR16   | Apply algorithim to find time of a lap based on tyre and fuel condition                              | HR04       | InProgress                               |
-| LR17   | Create a module to calculate total race time in the all possible tyre strategy                       | HR04       | InProgress                               |
-| LR18   | Calculate total race time in the all possible tyre strategy and select Strategy with lowest time     | HR05       | InProgress                               |
+| LR16   | Apply algorithim to find time of a lap based on tyre and fuel condition                              | HR04       | In Progress                               |
+| LR17   | Create a module to calculate total race time in the all possible tyre strategy                       | HR04       | In Progress                               |
+| LR18   | Calculate total race time in the all possible tyre strategy and select Strategy with lowest time     | HR05       | In Progress                               |
 
 
 
