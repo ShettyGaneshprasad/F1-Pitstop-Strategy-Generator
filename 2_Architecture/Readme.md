@@ -4,14 +4,14 @@
 
 - Structural Diagram
 
-![HighLevelStructuralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/HighLevelStructural.png)
+![HighLevelStructuralDiagram](https://github.com)
 
 ## Low Level Design
 
 - Structural Diagram
 
-![FeaturesLevelStructuralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/Component.png)
+![FeaturesLevelStructuralDiagram](https://github.com)
 
 - Behavioural Diagram
 
-![FeaturesBehaviouralDiagram](https://github.com/VelampudiRohit-292119/LTTSProject/blob/main/2_Design/UseCase.jpg)
+![FeaturesBehaviouralDiagram](https://github.com)
