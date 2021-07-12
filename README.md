@@ -109,9 +109,10 @@ PitStop Strategy include factors like:
 | ID   | Description                                                                                                                                     | Category       | Status (Implemented/ InProgress/ Future) |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------- |
 | HR01 | Able to Select Track from the data on the file on which grand Prix will be held           | Functional     | Implemented                              |
-| HR02 |                                | Functional     | Implemented                              |
-| HR03 | User to resolve the errors if the calculation for conversions is impossible, then the convertor must display information helping the situation. | Non-Functional | Future                                   |
+| HR02 | Display Track Information and save needed data from file into programm needed for computation    | Non-Functional    | Implemented                              |
+| HR03 | Take input of all needed race weekend information about car pace| Functional | Future                                   |
 | HR04 | Calculate Average race pace of the car                | Functional     | InProgress                               |
+| HR05 | Select Strategy for the race            | Functional     | InProgress                               |
 
 ### Low level Requirements
 
@@ -119,21 +120,21 @@ PitStop Strategy include factors like:
 | ------ | ---------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------- |
 | LR01   | Read File data on which circuit are available for that season of F1 Grand Prix                       | HR01       | Implemented                              |
 | LR02   | Take Input from the user to select which Grand Prix we will be creating Strategy for                 | HR01       | Implemented                              |
-| LR03   | Once the track is selected Display all the information about that track on the console               | HR01       | Implemented                              |
-| LR04   | Save the Track details in to the programme for further computation of strategy                       | HR01       | Implemented                              |
-| LR05   | Take input of best lap time of Free Practice 1 (FP1).                                                | HR02       | Implemented                              |
-| LR06   | Take input of best lap time of Free Practice 2 (FP2).                                                | HR02       | Implemented                              |
-| LR07   | Take input of best lap time of Free Practice 3 (FP3).                                                | HR02       | Implemented                              |
-| LR08   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR02       | Implemented                              |
-| LR09   | Check if qualified for Q2 i.e  Qualified Positon is less then 15                                     | HR02       | Implemented                              |
-| LR10   | Take input of best lap time of Qualifying 2 (Q2).                                                    | HR04       | Implemented                              |
-| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
-| LR11   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR04       | Implemented                              |
-| LR11   | Check which tyre is                                      | HR04       | Implemented                              |
-| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
-| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
-| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
-| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR04       | Implemented                              |
+| LR03   | Once the track is selected Display all the information about that track on the console               | HR02       | Implemented                              |
+| LR05   | Take input of best lap time of Free Practice 1 (FP1).                                                | HR03       | Implemented                              |
+| LR06   | Take input of best lap time of Free Practice 2 (FP2).                                                | HR03       | Implemented                              |
+| LR07   | Take input of best lap time of Free Practice 3 (FP3).                                                | HR03       | Implemented                              |
+| LR08   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR03       | Implemented                              |
+| LR09   | Check if qualified for Q2 i.e  Qualified Positon is less then 15                                     | HR03       | Implemented                              |
+| LR10   | Take input of best lap time of Qualifying 2 (Q2).                                                    | HR03       | Implemented                              |
+| LR11   | Check if qualified for Q1 i.e  Qualified Positon is less then 10                                     | HR03       | Implemented                              |
+| LR12   | Take input of best lap time of Qualifying 1 (Q1).                                                    | HR03       | Implemented                              |
+| LR13   | Take input on which tyre is used in Q1                                                               | HR03       | Implemented                              |
+| LR14   | Take input on what was the tyre age in Q1 as same tyre will be used in the race                      | HR03       | Implemented                              |
+| LR15   | Calculate Average Race pace from all qualyfing and Practice session                                  | HR03       | Implemented                              |
+| LR16   | Apply algorithim to find time of a lap based on tyre and fuel condition                              | HR04       | InProgress                               |
+| LR17   | Create a module to calculate total race time in the all possible tyre strategy                       | HR04       | InProgress                               |
+| LR18   | Calculate total race time in the all possible tyre strategy and select Strategy with lowest time     | HR05       | InProgress                               |
 
 
 
@@ -141,4 +142,4 @@ PitStop Strategy include factors like:
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
 3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action) -->
+4. [github workflow](https://docs.github.com/en/actions/learn-github-action) 
