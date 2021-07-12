@@ -30,19 +30,34 @@ Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
 
 
 
-<!-- ## Folder Structure
-Folder             | Description
--------------------| -----------------------------------------
-`1_Requirements`   | Documents detailing requirements and research
-`2_Design`         | Documents specifying design details
-`3_Implementation` | All code and documentation
-`4_Test_plan`      | Documents with test plans and procedures
+## Folder Structure
 
-## Contributors List and Summary
+| Folder  | Description  |
+|--- |--- |
+| 1_Requirements | Documents detailing requirements and research |
+| 2_Design | Structural and Behavioural UML Diagrams for High Level and Low level |
+| 3_Implementation | All code and documentation |
+| 4_Test Plan and Output | Documents with test plans and outputs |
+| 5_Report | Generated Report |
+| 6_ImagesandVideos | All the UML diagrams and other required images |
 
-SF Id. |  Name   |     
--------|---------|
-`268423` | Shetty Ganeshprasad  |      
+## Contribution List
+
+| SF ID  | Name          | Features                       | Number of issues |
+|---     |---            |---                             |--------------------- |
+| `268423`| Shetty Ganeshprasad  | listed below in Features table |       15              |
+
+## Features Table 
+
+|Sr. No. | Features |
+|--- |--- |
+|1 | Quick output to save time |
+|2 | Accurate output with required values |
+|3 | Easy to operate |
+|4 | Can insert, update, delete and search supplier details, customer details and medicine |
+|5 | User can generate E-bill |
+
+   
    
 
 
