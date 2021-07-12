@@ -42,6 +42,7 @@ coverageCheck:$(testing)
 	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-
+valgrind :
+	valgrind $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
