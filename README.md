@@ -1,6 +1,6 @@
 # SDLC Activity Based Learning 
-<!-- ![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg)
- -->
+![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg)
+
 
 
 
