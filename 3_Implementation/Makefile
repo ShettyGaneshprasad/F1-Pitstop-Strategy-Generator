@@ -8,7 +8,7 @@ INC = -Iinc\
 
 SRC = main.c
 
-TEST_SRC =testfile/TEST-F1-Pitstop-Strategy-Generator.c\
+TEST_SRC =testFile/TEST-F1-Pitstop-Strategy-Generator.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJ_NAME).$(EXEC)
