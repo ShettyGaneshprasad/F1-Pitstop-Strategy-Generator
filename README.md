@@ -4,21 +4,26 @@
 
 
 
-
-Build | Code Quality | Codacy & CodeInspector|
-|---------|--------------|-----------|
-[![C CI - Build Status on Linux](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Linux.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Linux.yml)[![C CI - Build Status on Windows.](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Windows.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Windows.yml) | [![Static Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml)[![Dynamic Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml)   | [![Code Inspector Badge](https://www.code-inspector.com/project/24633/status/svg)](https://www.code-inspector.com/project/24633/status/svg) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/82dc98a0e6bd48e594007fe41c0d2b4f)](https://app.codacy.com/gh/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/dashboard?branch=Production=Badge_Grade)  |
-
-
-Unity Testing | Code Coverage |Git Inspector|
+Linux & Windows build Status |Codacy & CodeInspector|Dynamic & Static code quality|
 |-----------|-----------|-----------|
-[![Unit Testing - Unity](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/TEST-Unity.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/TEST-Unity.yml)|  [![CI-Coverage](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeCoverage.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeCoverage.yml)  | [![Contribution Check - Git Inspector](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/GIT_Inspector.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/GIT_Inspector.yml) |
+| [![C CI - Build Status on Linux](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Linux.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Linux.yml)[![C CI - Build Status on Windows.](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Windows.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/c-Build-Windows.yml)  | [![Code Inspector Badge](https://www.code-inspector.com/project/24633/status/svg)](https://www.code-inspector.com/project/24633/status/svg)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/82dc98a0e6bd48e594007fe41c0d2b4f)](https://app.codacy.com/gh/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/dashboard?branch=Production=Badge_Grade) |  [![Static Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityStatic.yml)[![Dynamic Check](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeQualityDynamic.yml) |
 
 
 
+Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
+|---------|--------------|---------|
+[![Code Inspector Score](https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark.svg)](https://frontend.code-inspector.com/public/user/github/ShettyGaneshprasad) | [![CI-Coverage](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeCoverage.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/codeCoverage.yml) [![Unit Testing - Unity](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/TEST-Unity.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/TEST-Unity.yml)|[![Contribution Check - Git Inspector](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/GIT_Inspector.yml/badge.svg)](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/actions/workflows/GIT_Inspector.yml)|
+
+
+
+
+
+
+
+<!-- https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark.svg
 <a href="https://frontend.code-inspector.com/public/user/github/ShettyGaneshprasad">
-   <img src="https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark" alt="code inspector badge" />
-</a>
+   <img src="https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark"alt="code inspector badge" />
+</a> -->
 
 ## F1 Pitstop Strategy Generator
 ![F1 Pitstop Strategy Generator](https://cdn-wp.thesportsrush.com/2021/03/eb255945-personal-vlog-youtube-thumbnail-2021-03-28t223255.924.jpg)
