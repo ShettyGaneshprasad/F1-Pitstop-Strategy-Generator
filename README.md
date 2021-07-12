@@ -25,10 +25,10 @@ Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
    <img src="https://code-inspector.com/public/badge/user/github/ShettyGaneshprasad?style=dark"alt="code inspector badge" />
 </a> -->
 
-# F1 Pitstop Strategy Generator
+
 ![F1 Pitstop Strategy Generator](https://cdn-wp.thesportsrush.com/2021/03/eb255945-personal-vlog-youtube-thumbnail-2021-03-28t223255.924.jpg)
 
-## Introduction to F1 Pitstop Strategy Generator
+# Introduction to F1 Pitstop Strategy Generator
  
 - While the constructors compete by developing their engine and chassis with the latest technologies, real-time race simulations are also conducted back in the factories to provide useful insights that could greatly affect team decision making before and during the race. The results are sent to the pit wall, where the race engineers make pit stop strategy decisions and communicate with the drivers and all pit crew members.
 
