@@ -73,7 +73,7 @@ typedef struct LapdetailsBeforeGP
 
 typedef struct TyreDetails
 {
-    TyreCompound TyreCompound;
+    TyreCompound tyreCompound;
     unsigned int SpeedOffset;
     unsigned int TyreDegradation;
     unsigned int MaxTyreLapAge;

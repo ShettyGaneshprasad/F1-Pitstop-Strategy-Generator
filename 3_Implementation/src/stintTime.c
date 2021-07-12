@@ -40,7 +40,7 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
         // soft tyre
         {
             fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
-            tyreDetail->TyreCompound = Soft;
+            tyreDetail->tyreCompound = Soft;
             printf("tyre file selected Soft");
         }
         else
@@ -49,7 +49,7 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
             //Medium Tyre
             {
                 fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
-                tyreDetail->TyreCompound = Medium;
+                tyreDetail->tyreCompound = Medium;
                 printf("tyre file selected Medium");
             }
             else
@@ -57,7 +57,7 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
             {
 
                 fptr = fopen("../7_Data/HardCompoundTyre.txt", "a+");
-                tyreDetail->TyreCompound = Hard;
+                tyreDetail->tyreCompound = Hard;
                 printf("tyre file selected Hard");
             }
         }
@@ -101,7 +101,7 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
     }
 
     fclose(fptr);
-    printf("\nSelectedTyre  : %d\n", tyreDetail->TyreCompound);
+    printf("\nSelectedTyre  : %d\n", tyreDetail->tyreCompound);
     printf("Speed Off Set %u \n", tyreDetail->SpeedOffset);
     printf("Tyre Deg %u \n", tyreDetail->TyreDegradation);
     printf("tyre lap age %u \n", tyreDetail->MaxTyreLapAge);

@@ -38,6 +38,9 @@ testing: $(TEST_SRC)
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
+coverageCheck:$(BUILD_DIR)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 
 clean:

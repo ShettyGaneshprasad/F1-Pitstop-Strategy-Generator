@@ -224,6 +224,7 @@ int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, Ra
     }
 
     printf("\n\noptimalStrategyNumber:in seconds %d\n\noptimalStrategyNumber %d", optimalMinimumTimeStrategy, optimalStrategyNumber);
+    return 0; //dummy return
 }
 
 int Calculate1StopStrategyTime(TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, LapdetailsBeforeGP *lapdetailsBeforeGP)
