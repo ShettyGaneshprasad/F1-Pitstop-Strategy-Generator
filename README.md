@@ -1,4 +1,4 @@
-# SDLC Activity Based Learning ->  Pitstop Strategy Generator
+# SDLC Activity Based Learning -> F1 Pitstop Strategy Generator
 <!-- ![wakatime](https://wakatime.com/badge/github/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator.svg) -->
 
 
