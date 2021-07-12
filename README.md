@@ -46,7 +46,7 @@ Code Inspector Score | Unit Testing & Code Coverage|Git Inspector|
 
 | SF ID  | Name          | Features                       | Number of issues |
 |---     |---            |---                             |--------------------- |
-| `268423`| Shetty Ganeshprasad  | listed below in Features table |       15              |
+| `268423`| Shetty Ganeshprasad  | listed below in Features table |       28             |
 
 ## Features Table 
 
