@@ -4,7 +4,7 @@
 
 - Function Diagram
 
-![FunctionDiagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/function.svg)
+![FunctionDiagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/function.png)
 
 - Structural Diagram
 
