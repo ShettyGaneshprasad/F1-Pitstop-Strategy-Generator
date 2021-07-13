@@ -44,9 +44,9 @@
 
 ## Contribution List
 
-| SF ID    | Name                | Number of issues |
-| -------- | ------------------- | ---------------- |
-| `268423` | Shetty Ganeshprasad | 28               |
+| SF ID    | Name                | Number of issue raised |Number of issue resolved | 
+| -------- | ------------------- | ---------------- |---------------- |
+| `268423` | Shetty Ganeshprasad | 29               |19               |
 
 ## Process Overview
 
