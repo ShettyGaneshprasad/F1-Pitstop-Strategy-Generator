@@ -3,6 +3,8 @@
 
 ![TEST RESULTS](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/4_TestPlanAndOutput/Screenshot%202021-07-13%20164235.jpg)
 
+![CORRECT EXECUTION RESULTS](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/6_ImagesAndVideos/F1-Pitstop-Strategy-Generator-16.gif)
+
 <!-- ## When user gives wrong inputs
 
 
