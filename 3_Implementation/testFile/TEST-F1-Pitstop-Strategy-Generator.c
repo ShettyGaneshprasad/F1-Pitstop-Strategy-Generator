@@ -86,6 +86,18 @@ int main(void)
 
     /* Run Test functions */
     RUN_TEST(test_details);
+    RUN_TEST(test_details);
+    RUN_TEST(test_display);
+    RUN_TEST(test_FileAvailability);
+    RUN_TEST(test_display);
+    RUN_TEST(test_details);
+    RUN_TEST(test_display);
+    RUN_TEST(test_details);
+    RUN_TEST(test_display);
+    RUN_TEST(test_FileAvailability);
+    RUN_TEST(test_FileAvailability);
+    RUN_TEST(test_FileAvailability);
+    RUN_TEST(test_details);
     RUN_TEST(test_display);
     RUN_TEST(test_FileAvailability);
     // RUN_TEST(test_LapTimeInput);
