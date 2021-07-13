@@ -39,7 +39,7 @@ typedef struct TrackDetails
 
 /**
  * @brief enum to save tyre compound used in the car.
- * 
+ * Soft,Medium,Hard,None
  */
 typedef enum TyreCompound
 {
@@ -71,6 +71,10 @@ typedef struct LapdetailsBeforeGP
 
 } LapdetailsBeforeGP;
 
+/**
+ * @brief Structure containg tyre details like tyre compund selected speed offset tyre degradation and maxtyre lap age
+ * 
+ */
 typedef struct TyreDetails
 {
     TyreCompound tyreCompound;
@@ -80,6 +84,10 @@ typedef struct TyreDetails
 
 } TyreDetails;
 
+/**
+ * @brief structure to hold race details info like current lap and average race pace calculated for that grandprix
+ * 
+ */
 typedef struct RaceDetails
 {
     unsigned int currentLap;
@@ -87,6 +95,10 @@ typedef struct RaceDetails
 
 } RaceDetails;
 
+/**
+ * @brief structure to hold pitstop Strategy
+ * totalpitstop count int that strategy first tyre stint 2nd tyre stint and 3rd tyre stint
+ */
 typedef struct PitStopStrategy
 {
     unsigned int TotalPitStop;   // can be 1 for 1 stop i.e 2 tyre needed for full race
@@ -110,16 +122,65 @@ TrackDetails trackSelection();
  */
 LapdetailsBeforeGP LapInput();
 
+/**
+ * @brief Calculate Average RacePace  with the data collected of previous session
+ * 
+ * @return LapdetailsBeforeGP 
+ */
 int AvgRacePace(LapdetailsBeforeGP *);
 
+/**
+ * @brief calculate stint time with that particular tyre considering tyre deggradation and fuel load
+ * 
+ * @param StintCount 
+ * @param lapDetails 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lastStint 
+ * @return int 
+ */
 int StintTime(int, LapdetailsBeforeGP *, TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, int);
 
+/**
+ * @brief Calculate curent lap time considering fuel load and tyre degraddation
+ * 
+ * @return currentLapTime
+ * 
+ */
 int CurrentLapTime(TyreDetails *, TrackDetails *, RaceDetails *);
 
+/**
+ * @brief Calculate race time of all available Strategy and then select the strategy with best time
+ * 
+ * @return currentLapTime
+ * 
+ */
 int calculateRaceStrategy(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
 
+/**
+ * @brief Calculating race time for strategy having 1 Stop.
+ * 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lapdetailsBeforeGP 
+ * @return int 
+ */
 int Calculate1StopStrategyTime(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
 
+/**
+ * @brief Calculating race time for strategy having 2 Stop.
+ * 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lapdetailsBeforeGP 
+ * @return int 
+ */
 int Calculate2StopStrategyTime(TyreDetails *, TrackDetails *, RaceDetails *, PitStopStrategy *, LapdetailsBeforeGP *);
 
 #endif /* #ifndef __F1STRATEGYGENERATOR_H__*/

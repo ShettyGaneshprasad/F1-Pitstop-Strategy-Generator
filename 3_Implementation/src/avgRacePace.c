@@ -1,7 +1,7 @@
 /**
  * @file avgRacePace.c
  * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
- * @brief Calculating average race pace with available data
+ * @brief Calculating average race pace with data collected of previous session
  * @version 0.1
  * @date 2021-07-03
  * 
@@ -13,8 +13,7 @@
 #include "../inc/F1-Pitstop-Strategy-Generator.h"
 
 /**
- * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
- * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
+ * @brief Calculate Average RacePace  with the data collected of previous session
  * 
  * @return LapdetailsBeforeGP 
  */

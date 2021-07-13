@@ -1,7 +1,7 @@
 /**
  * @file trackInput.c
  * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
- * @brief Calculating that lap time considering tyre deg
+ * @brief Calculating that lap time considering tyre degradation, fuel load 
  * @version 0.1
  * @date 2021-07-06
  * 
@@ -16,13 +16,17 @@
 //TyreDetails
 
 /**
- * @brief Take input from the user about all lap times in fp1, fp2, fp3, Q1, Q2, Q3 
- * and store all the data including tyre used in q1 and also tyre lap age which is needed for further computation for strategy
+ * @brief calculate stint time with that particular tyre considering tyre deggradation and fuel load
  * 
- * @return LapdetailsBeforeGP 
- * 
+ * @param StintCount 
+ * @param lapDetails 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lastStint 
+ * @return int 
  */
-
 int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, int lastStint) //1 if true 0 if false
 {
 

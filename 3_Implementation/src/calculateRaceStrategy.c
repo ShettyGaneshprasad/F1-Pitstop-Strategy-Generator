@@ -1,7 +1,7 @@
 /**
  * @file calculateRaceStrategy.c
  * @author Shetty Ganeshprasad (shettyganeshprasad1998@gmail.com)
- * @brief Calculating stint time
+ * @brief Calculating and selecting best race strategy
  * @version 0.1
  * @date 2021-07-07
  * 
@@ -15,21 +15,25 @@
 //TyreDetails
 
 /**
- * @brief Calculate speed of the lap in seocnds by taking consideration of average race pace tyre used and fuel load
+ * @brief Calculate race time of all available Strategy and then select the strategy with best time
  * 
  * @return currentLapTime
  * 
  */
-
 int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, LapdetailsBeforeGP *lapdetailsBeforeGP) //1 if true 0 if false
 {
     int StrategyCounter = 0;
-    int eachStrategyTotalTime[30]; // for all total strategy
+    /**
+     * @brief for all 30 strategy
+     * 
+     */
+    int eachStrategyTotalTime[30];
     pitStopStrategy->TotalPitStop = 1;
     //to pit strategy
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = None;
+
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
     StrategyCounter++;
 
@@ -227,6 +231,16 @@ int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, Ra
     return 0; //dummy return
 }
 
+/**
+ * @brief Calculating race time for strategy having 1 Stop.
+ * 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lapdetailsBeforeGP 
+ * @return int 
+ */
 int Calculate1StopStrategyTime(TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, LapdetailsBeforeGP *lapdetailsBeforeGP)
 {
     int total1StopStrategyRaceTime;
@@ -236,6 +250,16 @@ int Calculate1StopStrategyTime(TyreDetails *tyreDetail, TrackDetails *trackDetai
     return total1StopStrategyRaceTime;
 }
 
+/**
+ * @brief Calculating race time for strategy having 2 Stop.
+ * 
+ * @param tyreDetail 
+ * @param trackDetail 
+ * @param raceDetail 
+ * @param pitStopStrategy 
+ * @param lapdetailsBeforeGP 
+ * @return int 
+ */
 int Calculate2StopStrategyTime(TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, LapdetailsBeforeGP *lapdetailsBeforeGP)
 {
     int total2StopStrategyRaceTime;
