@@ -1,4 +1,4 @@
-# Design
+# UML Diagram
 
 ## High Level Design
 
@@ -6,16 +6,10 @@
 
 ![FunctionDiagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/function.png)
 
-- Structural Diagram
-
-![HighLevelStructuralDiagram](https://github.com)
 
 ## Low Level Design
 
-- Structural Diagram
+- Flow Chart Diagram
 
-![FeaturesLevelStructuralDiagram](https://github.com)
+![FeaturesLevelStructuralDiagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/FlowChart.png)
 
-- Behavioural Diagram
-
-![FeaturesBehaviouralDiagram](https://github.com)
