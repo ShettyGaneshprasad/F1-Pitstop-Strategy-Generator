@@ -11,5 +11,5 @@
 
 - Flow Chart Diagram
 
-![FeaturesLevelStructuralDiagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/FlowChart.png)
+![Flow Chart Diagram](https://github.com/ShettyGaneshprasad/F1-Pitstop-Strategy-Generator/blob/Production/2_Architecture/FlowChart.png)
 
