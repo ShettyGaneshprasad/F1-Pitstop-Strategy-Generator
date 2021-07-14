@@ -46,7 +46,7 @@
 
 | SF ID    | Name                | Number of issue raised |Number of issue resolved | 
 | -------- | ------------------- | ---------------- |---------------- |
-| `268423` | Shetty Ganeshprasad | 29               |19               |
+| `268423` | Shetty Ganeshprasad | 29               |24               |
 
 ## Process Overview
 
