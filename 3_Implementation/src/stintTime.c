@@ -103,8 +103,17 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
 
         LineNO++;
     }
+    if (fptr == NULL)
+    {
+        perror("File Opening Error");
+        fprintf(stderr, "%s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+        fclose(fptr);
+    }
 
-    fclose(fptr);
     printf("\nSelectedTyre  : %d\n", tyreDetail->tyreCompound);
     printf("Speed Off Set %u \n", tyreDetail->SpeedOffset);
     printf("Tyre Deg %u \n", tyreDetail->TyreDegradation);
