@@ -22,7 +22,7 @@
  */
 int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, RaceDetails *raceDetail, PitStopStrategy *pitStopStrategy, LapdetailsBeforeGP *lapdetailsBeforeGP) //1 if true 0 if false
 {
-    int StrategyCounter = 0;
+    unsigned int StrategyCounter = 0;
     /**
      * @brief for all 30 strategy
      * 
@@ -35,36 +35,42 @@ int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, Ra
     pitStopStrategy->thirdStintTyre = None;
 
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = None;
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = None;
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = None;
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = None;
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = None;
     eachStrategyTotalTime[StrategyCounter] = Calculate1StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     //2 stop strategy below
@@ -75,144 +81,168 @@ int calculateRaceStrategy(TyreDetails *tyreDetail, TrackDetails *trackDetail, Ra
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Medium;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Medium;
     pitStopStrategy->thirdStintTyre = Medium;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Soft;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Hard;
     pitStopStrategy->secondStintTyre = Soft;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     pitStopStrategy->firstStintTyre = Soft;
     pitStopStrategy->secondStintTyre = Hard;
     pitStopStrategy->thirdStintTyre = Hard;
     eachStrategyTotalTime[StrategyCounter] = Calculate2StopStrategyTime(tyreDetail, trackDetail, raceDetail, pitStopStrategy, lapdetailsBeforeGP);
+    printf("Calculating Strategy for strategy Number: %u\n\n", StrategyCounter);
     StrategyCounter++;
 
     int length = 30;

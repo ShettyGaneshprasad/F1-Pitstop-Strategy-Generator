@@ -79,30 +79,42 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
         }
     }
 
-    char buf[100];
-
-    int LineNO = 1;
-    while (fgets(buf, sizeof(buf), fptr))
+    if (fptr == NULL)
+    {
+        perror("File Opening Error: in stintTime.c");
+        fprintf(stderr, "%s\n", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+    else
     {
 
-        if (LineNO == 2)
+        char buf[100];
+
+        int LineNO = 1;
+
+        while (fgets(buf, sizeof(buf), fptr))
         {
 
-            tyreDetail->SpeedOffset = atoi(buf);
-        }
-        if (LineNO == 3)
-        {
+            if (LineNO == 2)
+            {
 
-            tyreDetail->TyreDegradation = atoi(buf);
-        }
-        if (LineNO == 4)
-        {
+                tyreDetail->SpeedOffset = atoi(buf);
+            }
+            if (LineNO == 3)
+            {
 
-            tyreDetail->MaxTyreLapAge = atoi(buf);
-        }
+                tyreDetail->TyreDegradation = atoi(buf);
+            }
+            if (LineNO == 4)
+            {
 
-        LineNO++;
+                tyreDetail->MaxTyreLapAge = atoi(buf);
+            }
+
+            LineNO++;
+        }
     }
+
     if (fptr == NULL)
     {
         perror("File Opening Error");
