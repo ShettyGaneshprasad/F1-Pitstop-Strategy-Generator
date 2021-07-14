@@ -28,8 +28,8 @@ TrackDetails trackSelection()
     FILE *fptr = NULL;
     fptr = fopen("../7_Data/f1Tracks.txt", "a+");
     char buf[100];
-    int RaceTrack = 3;
-    int LineNO = 0;
+
+    int LineNO;
     char dummy;
     int selectedTrackNumber;
 
