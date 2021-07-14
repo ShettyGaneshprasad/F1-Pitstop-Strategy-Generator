@@ -31,34 +31,111 @@ void tearDown()
  * @brief checking if programme is able to read file 
  * 
  */
-void test_FileAvailability(void)
+void test_FileAvailabilityF1Tracks(void)
 {
     FILE *fptr;
     fptr = fopen("../7_Data/f1Tracks.txt", "a+");
 
-    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE");
+    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE: f1Tracks.txt");
 }
 
-void test_LapTimeInput(void)
+void test_FileAvailabilityHardCompoundTyre(void)
 {
-    LapdetailsBeforeGP lapDetails;
-    lapDetails = LapInput();
+    FILE *fptr;
+    fptr = fopen("../7_Data/HardCompoundTyre.txt", "a+");
+
+    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE: HardCompoundTyre.txt");
+}
+
+void test_FileAvailabilityMediumCompoundTyre(void)
+{
+    FILE *fptr;
+    fptr = fopen("../7_Data/MediumCompoundTyre.txt", "a+");
+
+    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE: MediumCompoundTyre.txt");
+}
+
+void test_FileAvailabilitySoftCompoundTyre(void)
+{
+    FILE *fptr;
+    fptr = fopen("../7_Data/SoftCompoundTyre.txt", "a+");
+
+    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE:SoftCompoundTyre.txt");
+}
+void test_FileAvailabilityTyreData(void)
+{
+    FILE *fptr;
+    fptr = fopen("../7_Data/TyreData.txt", "a+");
+
+    TEST_ASSERT_MESSAGE(fptr, "Program cannot access FILE:TyreData");
+}
+
+void test_LapTimeInputFp1(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
 
     TEST_ASSERT_MESSAGE(lapDetails.fp1 > 0, "fp1 lap time is negative");
+}
+
+void test_LapTimeInputFp2(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.fp2 > 0, "fp2 lap time is negative");
+}
+
+void test_LapTimeInputFp3(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.fp3 > 0, "fp3 lap time is negative");
+}
+
+void test_LapTimeInputPosQ2(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.PositionInQ2 > 0, "Q2 Position is negative");
+}
+
+void test_LapTimeInputPosQ3(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.PositionInQ3 > 0, "Q2 Position is negative");
+}
+
+void test_LapTimeInputQ1(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.Q1 > 0, "Q1 lap time is negative");
+}
+
+void test_LapTimeInputQ2(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.Q2 > 0, "Q2 lap time is negative");
+}
+
+void test_LapTimeInputQ3(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.Q3 > 0, "Q3 lap time is negative");
+}
+
+void test_LapTimeInputQ1TyreLap(void)
+{
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
+
     TEST_ASSERT_MESSAGE(lapDetails.Q1TyreLapAge > 0, "Q1 Tyre lap age is negative");
 }
 
 void test_AverageRacePace(void)
 {
-    LapdetailsBeforeGP lapDetails;
-    lapDetails = LapInput();
+    LapdetailsBeforeGP lapDetails = {69, 68, 67, 65, 64, 63, 10, 2, 1, Hard};
 
     int averageRacePace = AvgRacePace(&lapDetails);
 
@@ -85,23 +162,23 @@ int main(void)
     UNITY_BEGIN();
 
     /* Run Test functions */
-    RUN_TEST(test_details);
+    RUN_TEST(test_FileAvailabilityF1Tracks);
+    RUN_TEST(test_FileAvailabilityHardCompoundTyre);
+    RUN_TEST(test_FileAvailabilityMediumCompoundTyre);
+    RUN_TEST(test_FileAvailabilitySoftCompoundTyre);
+    RUN_TEST(test_FileAvailabilityTyreData);
+    RUN_TEST(test_LapTimeInputFp1);
+    RUN_TEST(test_LapTimeInputFp2);
+    RUN_TEST(test_LapTimeInputFp3);
+    RUN_TEST(test_LapTimeInputPosQ2);
+    RUN_TEST(test_LapTimeInputPosQ3);
+    RUN_TEST(test_LapTimeInputQ1);
+    RUN_TEST(test_LapTimeInputQ2);
+    RUN_TEST(test_LapTimeInputQ3);
+    RUN_TEST(test_LapTimeInputQ1TyreLap);
+    RUN_TEST(test_AverageRacePace);
     RUN_TEST(test_details);
     RUN_TEST(test_display);
-    RUN_TEST(test_FileAvailability);
-    RUN_TEST(test_display);
-    RUN_TEST(test_details);
-    RUN_TEST(test_display);
-    RUN_TEST(test_details);
-    RUN_TEST(test_display);
-    RUN_TEST(test_FileAvailability);
-    RUN_TEST(test_FileAvailability);
-    RUN_TEST(test_FileAvailability);
-    RUN_TEST(test_details);
-    RUN_TEST(test_display);
-    RUN_TEST(test_FileAvailability);
-    // RUN_TEST(test_LapTimeInput);
-    // RUN_TEST(test_AverageRacePace);
 
     /* Close the Unity Test Framework */
     return UNITY_END();
