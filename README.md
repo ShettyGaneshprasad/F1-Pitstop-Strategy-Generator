@@ -131,9 +131,3 @@ PitStop Strategy include factors like:
 | LR17 | Create a module to calculate total race time in the all possible tyre strategy                   | HR04   | In Progress                              |
 | LR18 | Calculate total race time in the all possible tyre strategy and select Strategy with lowest time | HR05   | In Progress                              |
 
-## Learning Resources
-
-1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
-3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
