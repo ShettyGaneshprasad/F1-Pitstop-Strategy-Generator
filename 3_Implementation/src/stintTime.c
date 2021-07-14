@@ -113,16 +113,6 @@ int StintTime(int StintCount, LapdetailsBeforeGP *lapDetails, TyreDetails *tyreD
 
             LineNO++;
         }
-    }
-
-    if (fptr == NULL)
-    {
-        perror("File Opening Error");
-        fprintf(stderr, "%s\n", strerror(errno));
-        exit(EXIT_FAILURE);
-    }
-    else
-    {
         fclose(fptr);
     }
 
